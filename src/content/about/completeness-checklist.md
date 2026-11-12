@@ -15,6 +15,7 @@ related: about/open-questions, about/screenshot-checklist, about/maintaining-thi
 |---|---|---|---|
 | Phone sign-in, registration (7 steps) | `/login`, `/register` | [Signing in](#/getting-started/signing-in) | Verified |
 | Dashboard links | `/dashboard` | [Finding your way](#/getting-started/finding-your-way) | Verified |
+| Top menu, including **Help** (opens this guide) | header, phone **More** | [Finding your way](#/getting-started/finding-your-way) | Verified |
 | Profile | `/profile` | [Member self-service](#/members/member-self-service) | Verified |
 | Dues, payment history, statement | `/dues` | [Member self-service](#/members/member-self-service), [Tax statements](#/reports/tax-statements) | Verified |
 | Online giving (card/ACH) | `/donate` | [Online giving](#/donations/online-giving-stripe) | Verified; recurring gap found |

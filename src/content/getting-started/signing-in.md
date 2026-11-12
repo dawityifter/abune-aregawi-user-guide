@@ -63,6 +63,10 @@ If you are not the head of household, the form asks for the **head of household�
 Staff can add a member from **Admin Panel → Manage Members → Add Member**. That person then signs in with the phone number staff entered. See [Managing members](#/members/managing-members).
 :::
 
+## Getting help
+
+Use **Help** in the top menu, or in **More** on a phone, to open this guide. It is next to **Sign In** / **Sign Out** and works whether or not you are signed in.
+
 ## Signing out
 
 Click your name or **Sign Out** in the top bar. On a phone, open **More** at the bottom and choose **Sign Out**. On a shared computer, always sign out when you finish.

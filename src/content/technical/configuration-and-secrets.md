@@ -48,7 +48,7 @@ Settings in `env.example` but **not** passed by the deploy workflow, such as `ZE
 
 ## Frontend settings (GitHub secrets, built into the app)
 
-`REACT_APP_API_URL`, `REACT_APP_STRIPE_PUBLISHABLE_KEY` (must be a **live** key), `REACT_APP_FIREBASE_*` (seven values from the Firebase project), `REACT_APP_RECAPTCHA_SITE_KEY`, `REACT_APP_ENABLE_PHONE_AUTH` / `REACT_APP_ENABLE_EMAIL_AUTH`, `REACT_APP_YOUTUBE_SPIRITUAL_CHANNEL_ID`, `REACT_APP_GALLERY_FOLDER_ID`, `REACT_APP_UMAMI_SRC` / `_WEBSITE_ID` / `_SHARE_URL`, `REACT_APP_SENTRY_DSN`. Also `FIREBASE_TOKEN` for deploying.
+`REACT_APP_API_URL`, `REACT_APP_STRIPE_PUBLISHABLE_KEY` (must be a **live** key), `REACT_APP_FIREBASE_*` (seven values from the Firebase project), `REACT_APP_RECAPTCHA_SITE_KEY`, `REACT_APP_ENABLE_PHONE_AUTH` / `REACT_APP_ENABLE_EMAIL_AUTH`, `REACT_APP_YOUTUBE_SPIRITUAL_CHANNEL_ID`, `REACT_APP_GALLERY_FOLDER_ID`, `REACT_APP_UMAMI_SRC` / `_WEBSITE_ID` / `_SHARE_URL`, `REACT_APP_SENTRY_DSN`, and optionally `REACT_APP_HELP_URL` (where the **Help** link points; by default this guide’s GitHub Pages address). Also `FIREBASE_TOKEN` for deploying.
 
 These values are visible to anyone using the website (they are in the app’s code). That is normal for “publishable” keys; never put a **secret** key in a `REACT_APP_` setting.
 

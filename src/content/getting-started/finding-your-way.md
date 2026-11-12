@@ -7,6 +7,12 @@ updated: 2026-11-11
 related: getting-started/roles-and-permissions, dashboard/financial-overview, administration/roles-and-permissions
 ---
 
+## The top menu
+
+The bar at the top of every page shows the church name (a link to the home page), **Dashboard** once you are signed in, **Make a Pledge** while a pledge drive is running, the **EN / ትግ** language switch, **Help**, and **Sign In** or **Sign Out**.
+
+**Help** (ሓገዝ in Tigrigna) opens this guide in a new browser tab, so you can read the instructions while the application stays open.
+
 ## The Dashboard
 
 After you sign in you land on the **Dashboard**. It has two lists of links.
@@ -96,7 +102,7 @@ If you open a tab your role does not allow, it shows an error or “Access denie
 
 ## On a phone
 
-On a small screen, a bar at the bottom of the screen has four buttons: **Today** (your Dashboard), **Calendar**, **Give**, and **More**. **More** opens a menu with everything else, including **Sign Out**.
+On a small screen, a bar at the bottom of the screen has four buttons: **Today** (your Dashboard), **Calendar**, **Give**, and **More**. **More** opens a menu with everything else, including **Help** (this guide) and **Sign Out**. The menu button (☰) at the top also has **Help**.
 
 :::tip Treasurer work is easier on a computer
 The Treasurer Dashboard works on a phone, but its tables are wide. Use a laptop or desktop for reconciliation and reports.
