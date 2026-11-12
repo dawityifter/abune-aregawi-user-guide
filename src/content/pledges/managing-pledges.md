@@ -11,12 +11,12 @@ The **Treasurer → Pledges** tab shows the [Pledge Dashboard](#/pledges/pledge-
 
 ## The pledge list
 
-Each row shows **Donor**, **Pledged**, **Paid**, **Outstanding** and **Status**, with **Edit** and **Cancel pledge** actions. The heading shows the count, for example “84 pledges”.
+Each row shows **Donor**, **Pledged**, **Paid**, **Outstanding** and **Status**, with **Edit** and **Cancel pledge** actions. The heading names the drive, for example “Pledges — 2026 Pledge Drive”. When you open the list from a Pledge Dashboard figure, a chip above it shows the filter and how many pledges match.
 
 :::screenshot images/pledges/treasurer-pledges.png | Treasurer → Pledges: the live drive’s pledges and the Record Pledge button
-1 @ 88,10 Record Pledge
-2 @ 50,40 Pledged, Paid and Outstanding for each donor
-3 @ 90,40 Edit or Cancel pledge
+1 @ 85,5 Record Pledge
+2 @ 31,12 Pledged, Paid and Outstanding for each donor
+3 @ 83,40 Edit or Cancel pledge
 :::
 
 ## Recording a pledge

@@ -41,9 +41,9 @@ The pledge page shows the drive’s name and description from these fields. If t
 :::
 
 :::screenshot images/pledges/fundraising-campaigns.png | Fundraising Campaigns: each drive with Pledged, Collected, Outstanding and Donors
-1 @ 85,12 New Campaign
-2 @ 50,45 Drive totals and goal progress
-3 @ 85,45 View donors, Edit, Activate / Close campaign
+1 @ 85,29 New Campaign
+2 @ 62,41 Drive totals and goal progress
+3 @ 85,57 View donors, Edit, Activate / Close campaign
 :::
 
 ## Each drive’s card

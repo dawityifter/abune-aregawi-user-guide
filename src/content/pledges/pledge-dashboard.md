@@ -10,9 +10,9 @@ related: pledges/pledge-drives, pledges/managing-pledges, reports/board-summary
 The Pledge Dashboard is shown above the pledge list on **Treasurer → Pledges**. It is built for reporting a drive’s progress to leadership.
 
 :::screenshot images/pledges/pledge-dashboard.png | The Pledge Dashboard: progress toward the goal, fulfilment and monthly collections
-1 @ 25,15 Received and Still owed
-2 @ 70,15 Goal progress and daily pace
-3 @ 50,60 Monthly collections
+1 @ 25,36 Received and Still owed
+2 @ 50,15 Goal progress and daily pace
+3 @ 25,80 Monthly collections
 :::
 
 | Element | Meaning |

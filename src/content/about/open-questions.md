@@ -14,7 +14,7 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 
 | # | Item | Why it matters | Who should answer |
 |---|---|---|---|
-| 1 | **No regular, verified database backup.** Supabase plan and its backups unverified | Member records, pledges and reconciliation could be lost | Technical administrator; leadership (cost of a paid plan) |
+| 1 | **The nightly database backup stays on the API server only**, keeps about 4 days, alerts no one when it fails, and has no confirmed restore. Supabase’s own backups unverified. See [Backup and recovery](#/continuity/backup-and-recovery) | If the server or the Oracle Cloud account is lost, every backup goes with it | Technical administrator (off-server copy, alert, restore test); leadership (cost of a paid Supabase plan) |
 | 2 | **“Recurring” online giving charges only once.** No Stripe subscription is created, although the page offers Weekly/Monthly/Quarterly/Yearly | Members may believe they give monthly when they don’t | Developer to fix or hide the option; treasurer to tell affected members |
 | 3 | **The code repository belongs to a personal GitHub account** | The church can’t control the code or deployments without that person | Leadership + developer: create a church organization and transfer |
 | 4 | **Account owners for every outside service** (Supabase, Oracle Cloud, Firebase/Google, Stripe, Square, Twilio, Gmail, domain registrar, Chatbase, Sentry) | Recovery is hard or impossible without them | Leadership; fill in the [ownership matrix](#/continuity/ownership-matrix) |

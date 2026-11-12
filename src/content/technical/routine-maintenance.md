@@ -12,11 +12,12 @@ related: technical/logs-and-monitoring, continuity/backup-and-recovery, continui
 - `/api/ready` answers “ready”; the website loads; sign-in works.
 - Zelle Review is receiving new emails (if there were Zelle gifts).
 - No failed GitHub Actions runs.
+- The **nightly database dump** ran: a new file in `/var/www/backup/` on the API server, a normal size, and a log ending “completed successfully”. Nothing alerts anyone if it fails. See [Checking that it ran](#/continuity/backup-and-recovery?h=checking-that-it-ran).
 
 ## Monthly
 
 - **Ledger Backup → Last Run** succeeded recently.
-- Take a **database backup** and store it in the agreed encrypted location. See [Backup and recovery](#/continuity/backup-and-recovery).
+- Copy the latest **nightly database dump** off the server, encrypted, to the agreed church-owned location. See [Backup and recovery](#/continuity/backup-and-recovery).
 - Stripe and Square dashboards: no failing webhooks.
 - Twilio balance is sufficient.
 - Glance at `pm2 logs` for repeated errors, and check server disk space (`df -h`).
@@ -30,7 +31,7 @@ related: technical/logs-and-monitoring, continuity/backup-and-recovery, continui
 
 ## Yearly
 
-- **Restore test**: restore the latest backup into a scratch database and open it. A backup that has never been restored isn’t proven.
+- **Restore test**: restore the latest nightly dump into a scratch database and open it. A backup that has never been restored isn’t proven.
 - Review **roles** in the application (Admin Panel → Role Management).
 - Review **account owners** for every outside service. At least two church administrators each. See [Integrations](#/continuity/integrations).
 - Renew the **domain** `abunearegawi.church` (confirm the registrar and renewal date).

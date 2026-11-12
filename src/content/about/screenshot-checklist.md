@@ -2,13 +2,13 @@
 title: Screenshot checklist
 order: 3
 audience: Technical administrator, guide maintainers
-summary: Which application screenshots are in the guide, which still need capturing, and how to capture them safely with invented data.
+summary: Which application screenshots are in the guide, how each was captured, and how to capture them safely with invented data.
 updated: 2026-11-11
 related: about/maintaining-this-guide, about/completeness-checklist
 ---
 
 :::danger Screenshots are published on the internet
-Never take a screenshot from the live application or from any copy of real church data. Every image in this guide comes from a **separate demo environment filled with invented people and amounts**. Phone numbers are in the fictional range 555-0100–0199, and emails use example.org.
+Never take a screenshot from the live application or from any copy of real church data. Almost every image in this guide comes from a **separate demo environment filled with invented people and amounts**. The three pledge screens below were taken locally with every name replaced first (see “Captured by hand” below). Phone numbers are in the fictional range 555-0100–0199, and emails use example.org.
 :::
 
 ## How the screenshots were made
@@ -44,15 +44,17 @@ The demo environment files (seed script, synthetic CSVs, settings) are not in th
 | `administration/role-management.png` | [Assigning roles](#/administration/roles-and-permissions) |
 | `administration/sms.png` | [SMS](#/administration/sms-communications) |
 
-## Still to capture by hand
+## Captured by hand
 
-These screens read the Firebase sign-in directly, which demo mode does not provide, so they show “User not authenticated” there. Capture them by signing in with a real test account **on a local environment holding only invented data**. A Firebase test phone number, set up in the Firebase console under Authentication → Sign-in method → Phone → test numbers, avoids real text messages.
+These screens read the Firebase sign-in directly, which demo mode does not provide, so they show “User not authenticated” there. They were captured on 2026-11-11 from a local environment signed in as an administrator, using the browser’s zoom capture. Because that environment held real data, **every donor name, the signed-in user’s name and the welcome email were replaced in the page with invented ones** (“Abel Example”, “Demo User”, admin@example.org) before each capture. Nothing was saved back to the database.
 
-| Save as `public/…` | Screen and what it should show | Page |
+| Image | Screen | Page |
 |---|---|---|
-| `images/pledges/treasurer-pledges.png` | Treasurer → Pledges: the pledge list with Pledged/Paid/Outstanding, **Record Pledge**, Edit and Cancel pledge | [Managing pledges](#/pledges/managing-pledges) |
-| `images/pledges/pledge-dashboard.png` | Top of Treasurer → Pledges: Received, Still owed, goal progress, fulfilment, monthly collections | [Pledge Dashboard](#/pledges/pledge-dashboard) |
-| `images/pledges/fundraising-campaigns.png` | Admin Panel → Fundraising: a drive card with totals, **New Campaign**, View donors, Edit, Close campaign | [Pledge drives](#/pledges/pledge-drives) |
+| `pledges/treasurer-pledges.png` | Treasurer → Pledges: the pledge list with **Record Pledge**, Edit and Cancel pledge | [Managing pledges](#/pledges/managing-pledges) |
+| `pledges/pledge-dashboard.png` | Top of Treasurer → Pledges, with Monthly collections opened | [Pledge Dashboard](#/pledges/pledge-dashboard) |
+| `pledges/fundraising-campaigns.png` | Admin Panel → Fundraising: drive cards with **New Campaign**, View donors, Edit, Activate, Close campaign | [Pledge drives](#/pledges/pledge-drives) |
+
+To retake them, prefer a local environment with only invented data. If you must use real data, replace every name, phone number and email on screen first, and crop out anything you could not replace.
 
 ## Worth adding later (no placeholder yet)
 
