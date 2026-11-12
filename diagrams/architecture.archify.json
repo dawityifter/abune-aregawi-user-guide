@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Abune Aregawi Church Application",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "request-path",
+        "label": "Member request path",
+        "focus": [
+          "members",
+          "web",
+          "api",
+          "db"
+        ],
+        "note": "A member's browser loads the website, which calls the API, which reads and writes the database."
+      },
+      {
+        "id": "sign-in",
+        "label": "Sign-in",
+        "focus": [
+          "members",
+          "web",
+          "auth",
+          "api"
+        ],
+        "note": "Phone-number sign-in through Firebase; the API verifies the sign-in token on every request."
+      },
+      {
+        "id": "money-in",
+        "label": "Money coming in",
+        "focus": [
+          "stripe",
+          "square",
+          "gmail",
+          "api",
+          "db"
+        ],
+        "note": "Stripe and Square call the API with webhooks; Zelle notification emails are read from Gmail."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "members",
+      "type": "external",
+      "label": "Members & staff",
+      "sublabel": "browser / phone app",
+      "pos": [
+        40,
+        280
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Website",
+      "sublabel": "React · Firebase Hosting",
+      "pos": [
+        270,
+        280
+      ],
+      "size": [
+        170,
+        64
+      ],
+      "tag": "abunearegawi.church"
+    },
+    {
+      "id": "auth",
+      "type": "security",
+      "label": "Firebase Auth",
+      "sublabel": "phone + SMS code",
+      "pos": [
+        270,
+        100
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "API server",
+      "sublabel": "Node/Express · pm2",
+      "pos": [
+        530,
+        280
+      ],
+      "size": [
+        170,
+        64
+      ],
+      "tag": "api.abunearegawi.church"
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Supabase",
+      "pos": [
+        800,
+        280
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "gmail",
+      "type": "external",
+      "label": "Gmail",
+      "sublabel": "Zelle notifications",
+      "pos": [
+        530,
+        100
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "sheets",
+      "type": "cloud",
+      "label": "Google Sheets",
+      "sublabel": "ledger backup",
+      "pos": [
+        800,
+        100
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "stripe",
+      "type": "external",
+      "label": "Stripe",
+      "sublabel": "card & ACH giving",
+      "pos": [
+        270,
+        455
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "square",
+      "type": "external",
+      "label": "Square",
+      "sublabel": "card reader",
+      "pos": [
+        530,
+        455
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "twilio",
+      "type": "external",
+      "label": "Twilio",
+      "sublabel": "SMS & voicemail",
+      "pos": [
+        800,
+        455
+      ],
+      "size": [
+        160,
+        64
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Google Firebase",
+      "wraps": [
+        "web",
+        "auth"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Oracle Cloud VM (nginx)",
+      "wraps": [
+        "api"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "members-to-web",
+      "from": "members",
+      "to": "web",
+      "label": "HTTPS",
+      "variant": "emphasis"
+    },
+    {
+      "id": "web-sign-in",
+      "from": "web",
+      "to": "auth",
+      "label": "sign in",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "web-to-api",
+      "from": "web",
+      "to": "api",
+      "label": "REST /api",
+      "variant": "emphasis"
+    },
+    {
+      "id": "api-to-db",
+      "from": "api",
+      "to": "db",
+      "label": "SQL",
+      "variant": "emphasis"
+    },
+    {
+      "id": "api-reads-gmail",
+      "from": "api",
+      "to": "gmail",
+      "label": "read emails",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDy": -30
+    },
+    {
+      "id": "api-to-sheets",
+      "from": "api",
+      "to": "sheets",
+      "label": "weekly export",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "left"
+    },
+    {
+      "id": "stripe-webhook",
+      "from": "stripe",
+      "to": "api",
+      "label": "webhook",
+      "fromSide": "right",
+      "toSide": "bottom"
+    },
+    {
+      "id": "square-webhook",
+      "from": "square",
+      "to": "api",
+      "label": "webhook",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "api-to-twilio",
+      "from": "api",
+      "to": "twilio",
+      "label": "send SMS",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "violet",
+      "title": "Deployment",
+      "items": [
+        "Push to main runs GitHub Actions",
+        "Backend deploy also runs database migrations",
+        "Secrets live in GitHub Actions secrets"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Also connected",
+      "items": [
+        "Google Drive photo gallery, YouTube live banner",
+        "Umami analytics, Sentry errors, Chatbase assistant"
+      ]
+    }
+  ]
+}

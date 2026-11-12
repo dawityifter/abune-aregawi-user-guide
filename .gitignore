@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+# Never commit raw captures that may contain real member data
+screenshots-raw/
+*.csv
+# Archify visual-check sidecars (local evidence, not published)
+*.visual-check.*
