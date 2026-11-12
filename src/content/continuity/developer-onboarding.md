@@ -61,7 +61,7 @@ npm start                   # http://localhost:3000 (the Firebase key only allow
 - “Recurring” online giving charges only once (no Stripe subscription). See [Online giving](#/donations/online-giving-stripe)
 - Stripe and Square **refunds and disputes** are not processed
 - No UI for deleting or re-pointing payments; scripts only
-- The nightly database dump is kept only on the API server, for about 4 days, with no failure alert. See [Backup and recovery](#/continuity/backup-and-recovery)
+- The nightly database dump keeps about 4 days on the server and one encrypted copy in Google Drive, with no failure alert. See [Backup and recovery](#/continuity/backup-and-recovery)
 - Bounced checks are flagged but not reversed; the accounting policy is undecided
 - Sunday Deposit Check flags can’t be explained or cleared
 - Some frontend role flags are broader than the server allows (Leadership and Relationship member edit, AR Team SMS, member list for Bookkeeper, AR Team and Auditor)

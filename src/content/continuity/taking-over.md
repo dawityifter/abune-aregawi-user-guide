@@ -29,7 +29,7 @@ This page assumes the original developer and technical administrator is **unavai
 
 :::steps
 1. **Recover or transfer ownership** of every critical account, in this order: **GitHub** (the code and the deployment), **Supabase** (the database: all records), **Oracle Cloud** (the server running the API), **Firebase / Google Cloud** (website hosting and sign-in), the **domain registrar** for `abunearegawi.church`, then **Stripe**, **Square** and **Twilio**, and the **Google / Gmail** account that receives Zelle emails and holds Drive and Sheets.
-2. **Secure a database backup off the server.** A nightly dump is already taken on the API server (`/var/www/backup/`, about 4 days kept). Copy the newest one, encrypted, to church-owned storage. See [Backup and recovery](#/continuity/backup-and-recovery).
+2. **Secure a database backup off the server.** A nightly dump is taken on the API server (`/var/www/backup/`), and an encrypted copy is placed in the church Google account’s **Database Backups** folder. Find the encryption passphrase in the church’s records and check it opens that copy. See [Backup and recovery](#/continuity/backup-and-recovery).
 3. **Give the new technical administrator access** through each service’s own user management, never by sharing one login.
 4. **Make two church people administrators** of every service. See the [ownership matrix](#/continuity/ownership-matrix).
 5. **Record everything** in the password manager and update this guide’s [open questions](#/about/open-questions).
@@ -65,6 +65,6 @@ To **redeploy** after recovering access, see [Hosting and deployment](#/technica
 
 - [Integration inventory](#/continuity/integrations): every outside service, what it does, and how to restore it
 - [Account recovery](#/continuity/account-recovery): getting back into each account
-- [Backup and disaster recovery](#/continuity/backup-and-recovery): the nightly database dump, and what it doesn’t cover
+- [Backup and disaster recovery](#/continuity/backup-and-recovery): the nightly database dump, its Google Drive copy, and what they don’t cover
 - [Developer onboarding](#/continuity/developer-onboarding): the checklist for a replacement developer
 - [Ownership matrix](#/continuity/ownership-matrix): who should own what

@@ -12,12 +12,12 @@ related: technical/logs-and-monitoring, continuity/backup-and-recovery, continui
 - `/api/ready` answers “ready”; the website loads; sign-in works.
 - Zelle Review is receiving new emails (if there were Zelle gifts).
 - No failed GitHub Actions runs.
-- The **nightly database dump** ran: a new file in `/var/www/backup/` on the API server, a normal size, and a log ending “completed successfully”. Nothing alerts anyone if it fails. See [Checking that it ran](#/continuity/backup-and-recovery?h=checking-that-it-ran).
+- The **nightly database dump** ran: a new file in `/var/www/backup/` on the API server, a normal size, and a log ending “completed successfully”, and the Google Drive copy dated today. Nothing alerts anyone if it fails. See [Checking that it ran](#/continuity/backup-and-recovery?h=checking-that-it-ran).
 
 ## Monthly
 
 - **Ledger Backup → Last Run** succeeded recently.
-- Copy the latest **nightly database dump** off the server, encrypted, to the agreed church-owned location. See [Backup and recovery](#/continuity/backup-and-recovery).
+- Download the **Google Drive copy** of the database to a trusted computer, check it decrypts, then delete the download. See [Backup and recovery](#/continuity/backup-and-recovery).
 - Stripe and Square dashboards: no failing webhooks.
 - Twilio balance is sufficient.
 - Glance at `pm2 logs` for repeated errors, and check server disk space (`df -h`).

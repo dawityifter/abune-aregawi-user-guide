@@ -38,7 +38,7 @@ This list says **where** access is managed. Logins and keys belong in the **chur
 
 | Service | Used for | If it is unavailable | Restore |
 |---|---|---|---|
-| **Google Drive / Sheets** | Photo gallery; ledger backup spreadsheet | Gallery empty; backup stops | New refresh token via `backend/scripts/setup-drive-auth.js` → `GALLERY_DRIVE_*` / `LEDGER_SHEETS_*` |
+| **Google Drive / Sheets** | Photo gallery; ledger backup spreadsheet; the nightly encrypted database copy | Gallery empty; ledger backup stops; the database copy stops updating | New refresh token via `backend/scripts/setup-drive-auth.js` → `GALLERY_DRIVE_*` / `LEDGER_SHEETS_*`. The database copy uses rclone on the API server: `rclone config reconnect churchdrive:` |
 | **Gmail (mailer)** | Sending emails (meeting minutes, statements) | Emails fail | `MAILER_GMAIL_*` secrets |
 | **Twilio** | SMS to members; church phone line voicemail | No SMS or voicemail | Twilio console: balance, phone number, `TWILIO_*` secrets; voice webhook to `/api/twilio/voice` |
 | **YouTube** | Live-stream banner | Banner doesn’t show | `YOUTUBE_*` secrets (API key from Google Cloud) |
