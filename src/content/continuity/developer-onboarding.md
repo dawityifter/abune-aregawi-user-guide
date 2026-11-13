@@ -3,7 +3,7 @@ title: Developer onboarding checklist
 order: 5
 audience: Replacement developer, technical administrator
 summary: A practical checklist for a new developer taking over the application — access, local setup, reading list, business rules and known limitations.
-updated: 2026-11-11
+updated: 2026-11-13
 related: technical/architecture, technical/database-and-migrations, technical/data-corrections, about/open-questions
 ---
 
@@ -58,7 +58,7 @@ npm start                   # http://localhost:3000 (the Firebase key only allow
 
 ## Known technical limitations (as of November 2026)
 
-- “Recurring” online giving charges only once (no Stripe subscription). See [Online giving](#/donations/online-giving-stripe)
+- No recurring online giving. The option was hidden on the Give page (`DonatePage.tsx`) because no Stripe subscription was ever created; the backend still accepts `donation_type`/`frequency`. See [Online giving](#/donations/online-giving-stripe)
 - Stripe and Square **refunds and disputes** are not processed
 - No UI for deleting or re-pointing payments; scripts only
 - The nightly database dump keeps about 4 days on the server and one encrypted copy in Google Drive, with no failure alert. See [Backup and recovery](#/continuity/backup-and-recovery)

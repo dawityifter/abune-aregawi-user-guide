@@ -2,8 +2,8 @@
 title: Online giving (Stripe)
 order: 4
 audience: Treasurer, Admin; members giving online
-summary: How members give by card or bank account on the Give page, how those gifts appear automatically, and the important limits on recurring, failed and refunded payments.
-updated: 2026-11-11
+summary: How members give by card or bank account on the Give page, how those gifts appear automatically, and why every gift is one-time, and the limits on failed and refunded payments.
+updated: 2026-11-13
 status: needs-confirmation
 related: donations/card-and-ach-by-treasurer, reconciliation/reviewing-bank-transactions, continuity/integrations
 ---
@@ -15,11 +15,10 @@ related: donations/card-and-ach-by-treasurer, reconciliation/reviewing-bank-tran
 :::steps
 1. Open **Give**, from the Dashboard or the **Give** button at the bottom of a phone screen. The page is titled **Support Our Church**. Members don’t have to be signed in, but if they are, their details are filled in from their profile.
 2. Choose a **Donation Amount** or type an **Other amount** (minimum $1.00).
-3. Choose **One-Time** or **Recurring** (read the warning below).
-4. If they have an open pledge, they can tick **Apply to my pledge**.
-5. Choose **Credit/Debit Card** or **Bank Account (ACH)**, and fill in **Donor Information**: name is required; email, phone and billing address are optional.
-6. Read the authorization text and click **Give $&lt;amount&gt;**.
-7. The page shows “Payment successful! Thank you for your donation.”
+3. If they have an open pledge, they can tick **Apply to my pledge**.
+4. Choose **Credit/Debit Card** or **Bank Account (ACH)**, and fill in **Donor Information**: name is required; email, phone and billing address are optional.
+5. Read the authorization text and click **Give $&lt;amount&gt;**.
+6. The page shows “Payment successful! Thank you for your donation.”
 :::
 
 The page also lists **Other ways to give**, including Zelle: the church’s Zelle QR code and email address, with how-to steps.
@@ -42,15 +41,15 @@ Nobody needs to enter online gifts by hand. **Don’t** record them again with A
 | **Pending** | Started but not yet confirmed (common for ACH) |
 | **Failed** | Stripe reported the payment failed. If a payment record exists, it is marked failed. |
 
-:::danger “Recurring” does not currently repeat the gift
-The Give page offers **Recurring** with **Weekly**, **Monthly**, **Quarterly** or **Yearly**, and its authorization text mentions recurring payments. **In the current application, choosing Recurring charges the member once.** The chosen frequency is saved with the gift, but no repeating charge is ever set up with Stripe. This was confirmed by reading the application code on 11 November 2026.
+## Every gift is one-time
 
-Until a developer fixes this:
-- Tell members who want to give every month to give **one-time** each month, or to use Zelle’s own scheduled payments from their bank.
-- If a member asks why their monthly gift stopped, this is why.
+The Give page takes **one-time gifts only**. It used to offer **Recurring** (Weekly, Monthly, Quarterly or Yearly), but no repeating charge was ever set up with Stripe, so a “monthly” gift was charged **once**. The option was removed from the page in November 2026 rather than leave members believing they give every month.
 
-Recorded in [open questions](#/about/open-questions) as a high priority.
-:::
+- Members who want to give regularly can give **one-time** each time, or set up a scheduled **Zelle** payment from their own bank.
+- Older gifts in the records may still show **recurring** and a frequency. That is only what the member chose at the time; each was charged once.
+- If a member asks why their monthly gift stopped, or never repeated, this is why.
+
+Real recurring giving (Stripe subscriptions) would be a new feature for a developer. See [open questions](#/about/open-questions).
 
 ## Failed and refunded payments
 

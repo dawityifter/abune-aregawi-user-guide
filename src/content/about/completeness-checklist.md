@@ -3,7 +3,7 @@ title: Documentation coverage checklist
 order: 2
 audience: Technical administrator, guide maintainers
 summary: Every capability found in the application, the page that documents it, and how it was verified.
-updated: 2026-11-11
+updated: 2026-11-13
 related: about/open-questions, about/screenshot-checklist, about/maintaining-this-guide
 ---
 
@@ -18,7 +18,7 @@ related: about/open-questions, about/screenshot-checklist, about/maintaining-thi
 | Top menu, including **Help** (opens this guide) | header, phone **More** | [Finding your way](#/getting-started/finding-your-way) | Verified |
 | Profile | `/profile` | [Member self-service](#/members/member-self-service) | Verified |
 | Dues, payment history, statement | `/dues` | [Member self-service](#/members/member-self-service), [Tax statements](#/reports/tax-statements) | Verified |
-| Online giving (card/ACH) | `/donate` | [Online giving](#/donations/online-giving-stripe) | Verified; recurring gap found |
+| Online giving (card/ACH) | `/donate` | [Online giving](#/donations/online-giving-stripe) | Verified; recurring option removed (one-time only) |
 | Pledge page | `/pledge` | [Member self-service](#/members/member-self-service) | Verified |
 | Dependents, self-claim | `/dependents` | [Households](#/members/households-and-dependents) | Verified |
 | Departments, meetings, tasks | `/departments/...` | [Departments](#/administration/departments) | Verified (overview level) |

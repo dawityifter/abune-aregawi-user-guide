@@ -3,7 +3,7 @@ title: Open questions and known gaps
 order: 1
 audience: Church leadership, technical administrator, treasurer
 summary: Everything this guide could not confirm, the application’s known gaps, and decisions waiting for the church — in priority order.
-updated: 2026-11-11
+updated: 2026-11-13
 status: needs-confirmation
 related: continuity/taking-over, continuity/developer-onboarding, about/completeness-checklist
 ---
@@ -15,7 +15,7 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 | # | Item | Why it matters | Who should answer |
 |---|---|---|---|
 | 1 | **The nightly database backup** (on the server, plus one encrypted copy in the church’s Google Drive) keeps only a few days, alerts no one when it fails, and has no tested full restore. Supabase’s own backups unverified. See [Backup and recovery](#/continuity/backup-and-recovery) | A failure or a mistake noticed late may leave no good copy; without the passphrase the Drive copy can’t be opened | Technical administrator (off-server copy, alert, restore test); leadership (cost of a paid Supabase plan) |
-| 2 | **“Recurring” online giving charges only once.** No Stripe subscription is created, although the page offers Weekly/Monthly/Quarterly/Yearly | Members may believe they give monthly when they don’t | Developer to fix or hide the option; treasurer to tell affected members |
+| 2 | **Members who chose “Recurring” before November 2026** were charged once only. The option is now removed from the Give page; real recurring giving (Stripe subscriptions) is not built | Some members may still believe they give monthly | Treasurer: tell members whose past gifts show recurring; leadership: decide whether real recurring giving is worth building |
 | 3 | **The code repository belongs to a personal GitHub account** | The church can’t control the code or deployments without that person | Leadership + developer: create a church organization and transfer |
 | 4 | **Account owners for every outside service** (Supabase, Oracle Cloud, Firebase/Google, Stripe, Square, Twilio, Gmail, domain registrar, Chatbase, Sentry) | Recovery is hard or impossible without them | Leadership; fill in the [ownership matrix](#/continuity/ownership-matrix) |
 | 5 | **Domain registrar and renewal date** for `abunearegawi.church` | A lapsed domain stops the API | Leadership |
