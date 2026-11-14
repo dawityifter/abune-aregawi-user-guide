@@ -3,7 +3,7 @@ title: What members can do themselves
 order: 5
 audience: Members, and staff helping them
 summary: The member’s own Profile, Dues, Give, Pledge and Dependents pages, and the yearly contribution statement.
-updated: 2026-11-14
+updated: 2026-11-15
 related: getting-started/signing-in, donations/online-giving-stripe, reports/tax-statements
 ---
 
@@ -13,7 +13,7 @@ Members can do a lot without the treasurer or secretary. Point them to these pag
 
 **Dashboard → Profile**: name, phone, email, date of birth, gender, marital status, address, emergency contact, baptism name, Date Joined Parish, Interested in Serving, and **Language Preference**. Click **Edit Profile**, make changes, then **Save**.
 
-A member who joined through the site was not asked for gender, marital status or an emergency contact. Until those are filled in here, a **Finish your profile** card on their Dashboard names what is missing and links to this page.
+A member who joined through the site was not asked for gender, marital status or an emergency contact. Until those are filled in here, a **Finish your profile** card on their Dashboard names what is missing. **Complete my profile** opens this page already in edit mode, with the cursor in the first missing item. The emergency contact (name and phone number) has its own **Emergency contact** section, below **Contact & Address**.
 
 Dependents’ address comes from the head of household (“Address information is inherited from the head of household”).
 

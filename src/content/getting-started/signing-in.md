@@ -3,7 +3,7 @@ title: Signing in and registering
 order: 2
 audience: Everyone
 summary: How to sign in with a phone number and text-message code, how newcomers join the parish in three short screens, and what to do when signing in fails.
-updated: 2026-11-14
+updated: 2026-11-15
 related: getting-started/finding-your-way, help/faq, members/managing-members
 ---
 
@@ -61,7 +61,7 @@ If your phone number is not yet on a member record, **Join the parish** opens as
 Click **Join** on the last screen. A **Welcome** page shows the next service and three things you can do next: add your family, finish your profile, and add the app to your phone’s home screen. None of them is required.
 
 :::note What is asked later
-Joining no longer asks for gender, marital status, an emergency contact or a yearly pledge. A **Finish your profile** card on the Dashboard lists whichever of the first three is still missing and opens the **Profile** page, where all of them can be filled in. The card goes away when the profile is complete, or when the member chooses **Not now**.
+Joining no longer asks for gender, marital status, an emergency contact or a yearly pledge. A **Finish your profile** card on the Dashboard lists whichever of the first three is still missing and opens the **Profile** page in edit mode with the first missing item selected; all of them can be filled in there. The card goes away when the profile is complete, or when the member chooses **Not now**.
 :::
 
 Answers are kept on that device until you click **Join**, so refreshing the page or taking a phone call does not lose them. **Not now** on the first screen leaves without registering; you can come back by signing in again.
