@@ -3,7 +3,7 @@ title: Screenshot checklist
 order: 3
 audience: Technical administrator, guide maintainers
 summary: Which application screenshots are in the guide, how each was captured, and how to capture them safely with invented data.
-updated: 2026-11-11
+updated: 2026-11-14
 related: about/maintaining-this-guide, about/completeness-checklist
 ---
 
@@ -19,6 +19,13 @@ Never take a screenshot from the live application or from any copy of real churc
 4. `scripts/capture-app.mjs` in this repository opened each screen and saved the image to `public/images/`.
 
 The demo environment files (seed script, synthetic CSVs, settings) are not in this repository. Ask the technical administrator, or rebuild them by following the steps above.
+
+## Needs recapturing
+
+| Image | Why |
+|---|---|
+| `getting-started/sign-in.png` | The page now reads **Sign in or join** with a **Text me a code** button (2026-11-14). The picture still shows the old wording. |
+| `getting-started/dashboard.png` | A **Finish your profile** card can now appear under the greeting (2026-11-14). |
 
 ## Captured automatically
 

@@ -3,7 +3,7 @@ title: Finding, adding and editing members
 order: 1
 audience: Secretary, Admin
 summary: Using Manage Members to search, add a member, edit their details, and deactivate a record.
-updated: 2026-11-11
+updated: 2026-11-14
 related: members/households-and-dependents, members/duplicate-and-incorrect-records, administration/roles-and-permissions
 ---
 
@@ -73,6 +73,10 @@ The member will sign in with exactly the phone number you enter. Use their **own
 | **Family Info** | Household ID and the household’s dependents, with Add / Edit / Delete and **Promote** |
 
 :::warning Changing a phone number changes how that person signs in
+:::note New members may have blanks
+A member who joined through the site gave only a name, a household and an address. **Gender**, **marital status** and the **emergency contact** stay empty until the member fills in their Profile, or until staff enter them here, for example during the welcome call.
+:::
+
 After you change a member’s phone number, they must sign in with the **new** number. If they sign in with the old one, the application will not find them and will offer to register them again, creating a duplicate.
 :::
 
