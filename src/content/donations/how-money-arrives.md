@@ -3,7 +3,7 @@ title: How money arrives — the big picture
 order: 1
 audience: Treasurer, finance team, leadership
 summary: Every way money reaches the church, how each one gets into the books, and the one rule that keeps them from being counted twice.
-updated: 2026-11-11
+updated: 2026-11-14
 related: donations/cash-and-check, donations/zelle, donations/square, donations/benevity, reconciliation/what-reconciliation-means
 ---
 
@@ -15,7 +15,7 @@ Each gift is recorded as **one payment** (a *transaction*) with its **ledger ent
 |---|---|---|---|---|
 | **Cash** in the offering or to the treasurer | Treasurer uses **Add Payment** with the paper receipt number | Treasurer | The Monday–Wednesday bank **DEPOSIT** line ([Sunday Deposit Check](#/dashboard/sunday-deposit-check)) | [Cash and checks](#/donations/cash-and-check) |
 | **Check** | Same as cash, plus the donor’s check number | Treasurer | The bank deposit | [Cash and checks](#/donations/cash-and-check) |
-| **Card or bank account (ACH) online**, by the member on the **Give** page | Automatically, when **Stripe** reports the payment succeeded | Nobody; it’s automatic | Stripe payout on the bank statement | [Online giving (Stripe)](#/donations/online-giving-stripe) |
+| **Card or bank account (ACH) online**, by the member on the **Give** page, including **Pay my dues** | Automatically, when **Stripe** reports the payment succeeded; dues are recorded as membership dues for the chosen year | Nobody; it’s automatic | Stripe payout on the bank statement | [Online giving (Stripe)](#/donations/online-giving-stripe) |
 | **Card or ACH taken by the treasurer** (for example dues by card) | **Add Payment** → *Debit/Credit Card* or *ACH*, processed through Stripe | Treasurer | Stripe payout | [Card and ACH by the treasurer](#/donations/card-and-ach-by-treasurer) |
 | **Zelle** to the church’s email | The bank’s Zelle notification email is read automatically into **Zelle Review**; the treasurer matches and creates the payment | Treasurer | The Zelle line on the bank statement, linked automatically or by **Link to this entry** | [Zelle](#/donations/zelle) |
 | **Square card reader** at church | Square tells the application about each completed payment; it waits in **Square Review** | Treasurer | Square payout on the bank statement | [Square](#/donations/square) |

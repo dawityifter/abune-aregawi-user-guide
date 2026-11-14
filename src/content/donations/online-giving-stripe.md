@@ -3,7 +3,7 @@ title: Online giving (Stripe)
 order: 4
 audience: Treasurer, Admin; members giving online
 summary: How members give by card or bank account on the Give page, how those gifts appear automatically, and why every gift is one-time, and the limits on failed and refunded payments.
-updated: 2026-11-13
+updated: 2026-11-14
 status: needs-confirmation
 related: donations/card-and-ach-by-treasurer, reconciliation/reviewing-bank-transactions, continuity/integrations
 ---
@@ -13,13 +13,17 @@ related: donations/card-and-ach-by-treasurer, reconciliation/reviewing-bank-tran
 ## What the member does
 
 :::steps
-1. Open **Give**, from the Dashboard or the **Give** button at the bottom of a phone screen. The page is titled **Support Our Church**. Members don’t have to be signed in, but if they are, their details are filled in from their profile.
+1. Open **Give**, from the Dashboard or from **Giving → Give** at the bottom of a phone screen. The page is titled **Support Our Church**. Members don’t have to be signed in, but if they are, their details are filled in from their profile.
 2. Choose a **Donation Amount** or type an **Other amount** (minimum $1.00).
 3. If they have an open pledge, they can tick **Apply to my pledge**.
 4. Choose **Credit/Debit Card** or **Bank Account (ACH)**, and fill in **Donor Information**: name is required; email, phone and billing address are optional.
 5. Read the authorization text and click **Give $&lt;amount&gt;**.
 6. The page shows “Payment successful! Thank you for your donation.”
 :::
+
+**Paying dues.** A signed-in member who comes from **Pay my dues** sees the same page headed **Paying your {year} membership dues**, with the balance filled in. The gift is recorded as membership dues for that year rather than as a donation, and anything above what is owed for the year is applied to the following year. The pledge option is not offered on that page, so a dues payment is never turned into a pledge payment.
+
+On a phone or computer with Apple Pay or Google Pay set up, a wallet button appears above the card form once an amount of $1 or more is chosen. Tapping it pays with the wallet and records the gift exactly like a card gift. Devices without a wallet do not see it.
 
 The page also lists **Other ways to give**, including Zelle: the church’s Zelle QR code and email address, with how-to steps.
 

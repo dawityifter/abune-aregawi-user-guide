@@ -2,12 +2,12 @@
 title: Card and ACH payments taken by the treasurer
 order: 3
 audience: Treasurer, Bookkeeper, AR Team
-summary: Charging a member’s card or bank account from Add Payment, for example for membership dues, which members cannot pay online themselves.
-updated: 2026-11-11
+summary: Charging a member’s card or bank account from Add Payment, for example for membership dues, which a member can also pay online themselves.
+updated: 2026-11-14
 related: donations/online-giving-stripe, donations/cash-and-check, continuity/integrations
 ---
 
-Members can’t pay **membership dues** online themselves; the Give page is for donations and pledges. When a member wants to pay dues by card or bank account, the treasurer takes the payment through **Add Payment**. It is processed by **Stripe**, the same card processor as online giving.
+Members can pay their own **membership dues** online with **Pay my dues** (see [What members can do themselves](#/members/member-self-service)). The treasurer’s **Add Payment** is for a member who pays in person, by phone or on someone else’s behalf, or whose dues belong to a year other than the one on screen. It is processed by **Stripe**, the same card processor as online giving.
 
 :::steps
 1. **Add Payment** → **Member Payment** → choose the member.
