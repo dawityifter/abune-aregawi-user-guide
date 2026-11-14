@@ -3,19 +3,26 @@ title: Finding your way around
 order: 3
 audience: Everyone
 summary: The Dashboard, the top menu, the phone menu at the bottom, the Treasurer and Admin dashboards, and switching language.
-updated: 2026-11-11
+updated: 2026-11-14
 related: getting-started/roles-and-permissions, dashboard/financial-overview, administration/roles-and-permissions
 ---
 
 ## The top menu
 
-The bar at the top of every page shows the church name (a link to the home page), **Dashboard** once you are signed in, **Make a Pledge** while a pledge drive is running, the **EN / ትግ** language switch, **Help**, and **Sign In** or **Sign Out**.
+The bar at the top of every page shows the church name (a link to the home page), **Dashboard** once you are signed in, **Make a Pledge** while a pledge drive is running, the **EN / ትግ** language switch, **Help**, and **Sign in or join** or **Sign Out**. On the home page, visitors who are not signed in also see **Become a member**, which opens the same sign-in page.
 
 **Help** (ሓገዝ in Tigrigna) opens this guide in a new browser tab, so you can read the instructions while the application stays open.
 
 ## The Dashboard
 
-After you sign in you land on the **Dashboard**. It has two lists of links.
+After you sign in you land on the **Dashboard**. From the top it shows:
+
+1. **Your greeting**, then **today in the Church** (the feast, fast or commemoration) and **the next service**.
+2. **This week at the parish**: up to three parish events in the next seven days, each with **Add to my calendar**. It does not appear when no events are planned.
+3. **Your standing**: membership dues for the year (with **Pay my dues** and **See your dues** when a balance is due) and what you have given this year. A member with a pledge in the running drive also sees **how much of the pledge has been given** and **Pay toward my pledge**, which opens the give page with **Apply to my pledge** already ticked.
+4. **Finish your profile**, if details are still missing, then parish news.
+
+Below that, on a computer, are two lists of links. On a phone there are four quick links instead (**Family**, **My Service**, **Gallery**, **Help**), because the rest are in the **Give** tab and **More** menu described below.
 
 **Your church** — everyone who is signed in sees these:
 
@@ -23,7 +30,7 @@ After you sign in you land on the **Dashboard**. It has two lists of links.
 |---|---|---|
 | **Profile** | `/profile` | Your name, contact details, address, baptism name |
 | **Dues** | `/dues` | Your household’s membership dues, payment history and yearly statement |
-| **Give** | `/donate` | Online giving by card or bank account |
+| **Give** | `/donate` | Online giving by card, bank account, Apple Pay or Google Pay |
 | **Children & Dependents** | `/dependents` | Your spouse and children (heads of household only) |
 | **My Service** | `/departments` | Departments and ministries you belong to |
 | **Photo Gallery** | `/gallery` | Photos from church events |
@@ -102,7 +109,11 @@ If you open a tab your role does not allow, it shows an error or “Access denie
 
 ## On a phone
 
-On a small screen, a bar at the bottom of the screen has four buttons: **Today** (your Dashboard), **Calendar**, **Give**, and **More**. **More** opens a menu with everything else, including **Help** (this guide) and **Sign Out**. The menu button (☰) at the top also has **Help**.
+On a small screen, a bar at the bottom of the screen has four buttons: **Today** (your Dashboard), **Calendar**, **Giving**, and **More**. The top bar has no menu button of its own; **More** is the one phone menu. It holds your Profile, Family, Ministries, Gallery, leadership and bylaws, **Make a Pledge** (while a drive is running), the language choice, **Help** (this guide) and **Sign Out**.
+
+**Giving** (when you are signed in) opens a short page with **Give**, **My dues**, **Statements** (last year’s contribution statement) and **Make a Pledge** while a drive is running. Visitors who are not signed in go straight to the give page.
+
+The **Calendar** tab shows **Upcoming at the parish** (events) above the feasts-and-fasts calendar.
 
 :::tip Treasurer work is easier on a computer
 The Treasurer Dashboard works on a phone, but its tables are wide. Use a laptop or desktop for reconciliation and reports.

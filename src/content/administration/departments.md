@@ -3,7 +3,7 @@ title: Departments and ministries
 order: 2
 audience: Admin, Secretary, Church Leadership, department leaders
 summary: Creating departments, managing members, and running meetings and tasks.
-updated: 2026-11-11
+updated: 2026-11-14
 related: administration/sms-communications, members/member-self-service
 ---
 
@@ -38,5 +38,5 @@ Members of a department see it under **Dashboard → My Service** (“Department
 - **Add Task**: a task with a status and priority, assigned to someone.
 
 :::note Joining a department
-Members can browse departments, but the **Request to Join** button says “Request to join functionality coming soon!”. Today, a leader or the secretary adds people.
+Members can browse departments and tap **Request to Join**. That sends a volunteer request naming the ministry, which staff read under **Messages → Volunteer requests**; the member’s button then reads **Requested**. Nothing is added automatically: a leader or the secretary still adds the person to the department.
 :::

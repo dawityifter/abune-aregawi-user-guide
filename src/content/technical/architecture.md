@@ -3,7 +3,7 @@ title: Architecture at a glance
 order: 1
 audience: Technical administrator, developers
 summary: The parts of the system, where each runs, how a request flows, and the technology stack.
-updated: 2026-11-11
+updated: 2026-11-14
 related: technical/hosting-and-deployment, continuity/integrations, continuity/developer-onboarding
 ---
 
@@ -53,7 +53,7 @@ About 42 database models; the main ones:
 | Pledges | `pledge_campaigns`, `pledges`, `pledge_allocations` |
 | Money out | `ledger_entries` (type expense), `expense_categories`, `vendors`, `employees` |
 | Reconciliation | `bank_transactions`, `bank_memo_matches`, `expense_memo_matches`, `zelle_email_queue`, `zelle_memo_matches`, `square_payments` |
-| Other | `member_loans`, `merch_orders`, `sms_logs`, `announcements`, `voicemails`, `church_settings`, `activity_logs` |
+| Other | `member_loans`, `merch_orders`, `sms_logs`, `announcements`, `parish_events`, `voicemails`, `church_settings`, `activity_logs` |
 
 **The central rule:** every payment is one `transactions` row plus its `ledger_entries` row. A bank row **links** to a payment; it must never create a second one for the same money.
 

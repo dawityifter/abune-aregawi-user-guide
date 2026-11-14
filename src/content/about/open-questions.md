@@ -3,7 +3,7 @@ title: Open questions and known gaps
 order: 1
 audience: Church leadership, technical administrator, treasurer
 summary: Everything this guide could not confirm, the application’s known gaps, and decisions waiting for the church — in priority order.
-updated: 2026-11-13
+updated: 2026-11-14
 status: needs-confirmation
 related: continuity/taking-over, continuity/developer-onboarding, about/completeness-checklist
 ---
@@ -54,4 +54,4 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 | 23 | No uptime monitoring; `/api/health` reports “connected” without checking the database |
 | 24 | Several Tigrigna strings written during development await native-speaker review (`tigrigna-translation-review.md` in the app repository) |
 | 25 | HTTPS certificate renewal method on the server, and the server’s OS and Node versions, are undocumented |
-| 26 | Department **Request to Join** is not implemented |
+| 26 | Department **Request to Join** sends a volunteer request to staff but does not add the person to the department |

@@ -3,7 +3,7 @@ title: Documentation coverage checklist
 order: 2
 audience: Technical administrator, guide maintainers
 summary: Every capability found in the application, the page that documents it, and how it was verified.
-updated: 2026-11-13
+updated: 2026-11-14
 related: about/open-questions, about/screenshot-checklist, about/maintaining-this-guide
 ---
 
@@ -13,7 +13,7 @@ related: about/open-questions, about/screenshot-checklist, about/maintaining-thi
 
 | Capability | Route / screen | Documented in | Status |
 |---|---|---|---|
-| Phone sign-in, registration (7 steps) | `/login`, `/register` | [Signing in](#/getting-started/signing-in) | Verified |
+| Phone sign-in, joining (3 screens), welcome page, Finish your profile card | `/login`, `/register` | [Signing in](#/getting-started/signing-in) | Verified |
 | Dashboard links | `/dashboard` | [Finding your way](#/getting-started/finding-your-way) | Verified |
 | Top menu, including **Help** (opens this guide) | header, phone **More** | [Finding your way](#/getting-started/finding-your-way) | Verified |
 | Profile | `/profile` | [Member self-service](#/members/member-self-service) | Verified |
@@ -57,6 +57,8 @@ related: about/open-questions, about/screenshot-checklist, about/maintaining-thi
 | Survey Report | [Survey report](#/reports/survey-report) | Verified |
 | SMS Communications | [SMS](#/administration/sms-communications) | Verified |
 | Outreach, announcements, Church TV | [Outreach](#/administration/outreach-and-announcements) | Verified |
+| Parish events (staff Events tab, Dashboard and Calendar lists, add to phone calendar) | [Outreach](#/administration/outreach-and-announcements) | Written from the code; not yet seen running |
+| Giving tab and page, dashboard quick links, pledge progress, Apple Pay / Google Pay, Request to Join | [Finding your way](#/getting-started/finding-your-way) | Written from the code; wallet payments need HTTPS and Stripe domain registration to test |
 
 ## Technical and continuity
 
