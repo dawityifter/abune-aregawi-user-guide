@@ -7,3 +7,4 @@ screenshots-raw/
 *.csv
 # Archify visual-check sidecars (local evidence, not published)
 *.visual-check.*
+notes/
