@@ -180,6 +180,15 @@ main { flex: 1; min-width: 0; outline: none; }
 .pin-inline { width: 22px; height: 22px; font-size: 12px; margin-right: 8px; flex-shrink: 0; border-width: 0; }
 .shot-legend { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
 .shot-legend li { display: flex; align-items: flex-start; font-size: 14.5px; }
+.shot-lang { display: inline-flex; margin-bottom: 8px; border: 1px solid var(--line-strong); border-radius: 8px; overflow: hidden; }
+.shot-lang button { appearance: none; border: 0; background: var(--surface); color: var(--ink-2); font: inherit; font-size: 13px; padding: 5px 14px; cursor: pointer; }
+.shot-lang button + button { border-left: 1px solid var(--line-strong); }
+.shot-lang button[aria-pressed="true"] { background: var(--primary); color: var(--primary-ink); }
+.shot-lang button:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.shot[data-view="en"] .shot-ti, .shot[data-view="ti"] .shot-en { display: none; }
+.shot[data-view="ti"] .pin { display: none; }
+.shot[data-view="ti"] .shot-legend::before { content: "Markers are shown on the English screenshot."; display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 2px; }
+.shot.phone { max-width: 320px; margin-left: auto; margin-right: auto; }
 .shot-missing { display: flex; flex-direction: column; gap: 4px; padding: 22px; border: 2px dashed var(--line-strong); border-radius: 10px; background: repeating-linear-gradient(135deg, var(--surface), var(--surface) 12px, var(--surface-2) 12px, var(--surface-2) 24px); color: var(--ink-2); font-size: 14px; }
 .shot-missing strong { color: var(--ink); }
 
@@ -291,6 +300,8 @@ main { flex: 1; min-width: 0; outline: none; }
 
 /* Print: just the article, readable on paper */
 @media print {
+  .shot-lang { display: none; }
+  .shot[data-view="ti"] .shot-en { display: block; } .shot[data-view="ti"] .shot-ti { display: none; }
   :root { --bg: #fff; --surface: #fff; }
   .topbar, .sidebar, .toc, .pager, .related, .ghost-btn, .copy-btn, .crumbs, .scrim, .skip-link { display: none !important; }
   .article-layout, .article.narrow, .home { padding: 0; max-width: none; }

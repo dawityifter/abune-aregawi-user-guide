@@ -38,6 +38,17 @@ Callouts: tip, note, warning, danger, success, admin, example, confirm, copy
 :::
 ```
 
+To show the same screen in Tigrigna, add a `ti:` line to the block. The reader gets an **English / ትግርኛ** switch above the picture; the numbered markers stay on the English picture.
+
+```
+:::screenshot images/member/dues.png | The Dues page
+ti: images/ti/member/dues.png
+1 @ 66,14 Pay my dues opens the Give page set up for dues
+:::
+```
+
+Pictures under `images/mobile/` are drawn at phone width. `npm run check:content` also checks that the `ti:` file exists.
+
 `:::confirm` marks information the church still has to confirm. Also set `status: needs-confirmation` in the front matter so the page shows the badge. `:::copy` adds a **Copy** button.
 
 ## Adding a page

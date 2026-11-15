@@ -32,9 +32,17 @@ Members and newcomers start in the same place. If your phone number is already o
 6. You arrive on your **Dashboard**. Your name appears at the top right.
 :::
 
-:::screenshot images/getting-started/sign-in.png | The sign-in page: type the phone number, then Text me a code
-1 @ 50,51 Phone number: ten digits; the site formats it
-2 @ 50,65 Text me a code texts a one-time code to the phone
+:::screenshot images/join/sign-in.png | The sign-in page: type the phone number, then Text me a code
+ti: images/ti/join/sign-in.png
+1 @ 60,53 Phone number: ten digits; the site formats it
+2 @ 60,67 **Text me a code** texts a one-time code to the phone
+:::
+
+:::screenshot images/join/code.png | The code screen: type the six digits from the text message
+ti: images/ti/join/code.png
+1 @ 60,55 **Sign-in code**: six digits; many phones fill it in for you
+2 @ 33,69 **Send again**, available after 30 seconds
+3 @ 48,69 **Use a different number** goes back and clears the number
 :::
 
 On the code screen:
@@ -59,6 +67,45 @@ If your phone number is not yet on a member record, **Join the parish** opens as
 | **Children and family** | Only if you ticked the box on the household screen: spouse, children or other family members. |
 
 Click **Join** on the last screen. A **Welcome** page shows the next service and three things you can do next: add your family, finish your profile, and add the app to your phone’s home screen. None of them is required.
+
+### The screens, one by one
+
+:::screenshot images/join/step-name.png | Step 1: your name. Baptismal name is optional
+ti: images/ti/join/step-name.png
+1 @ 65,48 **First name** and **Last name** are required
+2 @ 65,72 **Baptismal name** can be left empty
+3 @ 57,83 **Continue** goes to the next screen
+4 @ 28,83 **Not now** leaves without registering
+:::
+
+:::screenshot images/join/step-household.png | Step 2: your household
+ti: images/ti/join/step-household.png
+1 @ 32,47 **I’m registering my household**: you are the first in your home to register
+2 @ 32,58 **I’m joining a household already registered**: the site then asks for the head of household’s phone number
+3 @ 31,71 Tick this to add a spouse and children before you finish
+:::
+
+:::screenshot images/join/step-address.png | Step 3: your address
+ti: images/ti/join/step-address.png
+1 @ 65,40 Street address, city, state and ZIP code are required
+2 @ 65,81 Email is optional; it is used for receipts and statements
+3 @ 59,89 **Join** saves everything
+:::
+
+:::screenshot images/join/step-family.png | Step 4, only if you ticked the box: children and family
+ti: images/ti/join/step-family.png
+1 @ 30,37 Fill in one person, then **Add Dependent**; repeat for each person
+2 @ 30,79 **Add Dependent** adds them to the list below
+:::
+
+:::screenshot images/join/welcome.png | The Welcome page you reach after joining
+ti: images/ti/join/welcome.png
+1 @ 28,23 Welcome by name
+2 @ 5,44 The next service and **Directions**
+3 @ 32,68 Things you can do next; none is required
+4 @ 28,86 **Go to my dashboard**
+:::
+
 
 :::note What is asked later
 Joining no longer asks for gender, marital status, an emergency contact or a yearly pledge. A **Finish your profile** card on the Dashboard lists whichever of the first three is still missing and opens the **Profile** page in edit mode with the first missing item selected; all of them can be filled in there. The card goes away when the profile is complete, or when the member chooses **Not now**.

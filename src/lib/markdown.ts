@@ -136,7 +136,12 @@ function renderBlock(kind: string, rest: string, inner: string[], inline: (md: s
     const [path, caption = ''] = rest.split('|').map((s) => s.trim());
     const markers: { n: string; x: number; y: number; label: string }[] = [];
     const body: string[] = [];
+    // Optional second image: the same screen with the application set to Tigrigna.
+    //   ti: images/ti/member/dashboard.png
+    let tiPath = '';
     for (const line of inner) {
+      const ti = line.match(/^\s*ti:\s*(\S+)\s*$/);
+      if (ti) { tiPath = ti[1]; continue; }
       const mk = line.match(/^\s*(\d+)\s*@\s*([\d.]+)\s*,\s*([\d.]+)\s+(.+)$/);
       if (mk) markers.push({ n: mk[1], x: Number(mk[2]), y: Number(mk[3]), label: mk[4] });
       else body.push(line);
@@ -146,11 +151,18 @@ function renderBlock(kind: string, rest: string, inner: string[], inline: (md: s
       .map((m) => `<span class="pin" style="left:${m.x}%;top:${m.y}%" aria-hidden="true">${m.n}</span>`)
       .join('');
     const legend = markers.length
-      ? `<ol class="shot-legend">${markers.map((m) => `<li><span class="pin-inline">${m.n}</span>${inline(m.label).replace(/^<p>|<\/p>\s*$/g, '')}</li>`).join('')}</ol>`
+      ? `<ol class="shot-legend">${markers.map((m) => `<li><span class="pin-inline">${m.n}</span><span class="legend-text">${inline(m.label).replace(/^<p>|<\/p>\s*$/g, '')}</span></li>`).join('')}</ol>`
       : '';
     const extra = body.join('\n').trim() ? `<div class="shot-note">${inline(body.join('\n'))}</div>` : '';
-    return `<figure class="shot" data-src="${escapeHtml(path)}">
-  <div class="shot-frame"><img src="${src}" alt="${escapeHtml(caption)}" loading="lazy" />${pins}</div>
+    const tiSrc = tiPath ? `${base}${tiPath.replace(/^\/+/, '')}` : '';
+    const images = tiSrc
+      ? `<img class="shot-en" src="${src}" alt="${escapeHtml(caption)}" loading="lazy" /><img class="shot-ti" src="${tiSrc}" alt="${escapeHtml(caption)} (ትግርኛ)" loading="lazy" />`
+      : `<img src="${src}" alt="${escapeHtml(caption)}" loading="lazy" />`;
+    const toggle = tiSrc
+      ? `<div class="shot-lang" role="group" aria-label="Language of the screenshot"><button type="button" data-shot-lang="en" aria-pressed="true">English</button><button type="button" data-shot-lang="ti" aria-pressed="false" lang="ti">ትግርኛ</button></div>`
+      : '';
+    return `<figure class="shot${tiSrc ? ' has-ti' : ''}${/(^|\/)mobile\//.test(path) ? ' phone' : ''}" data-src="${escapeHtml(path)}" data-view="en">
+  ${toggle}<div class="shot-frame">${images}${pins}</div>
   <figcaption>${escapeHtml(caption)}</figcaption>${legend}${extra}
 </figure>`;
   }

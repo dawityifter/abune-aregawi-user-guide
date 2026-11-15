@@ -68,9 +68,28 @@ export function ArticlePage() {
       const img = fig.querySelector('img');
       const frame = fig.querySelector('.shot-frame') as HTMLElement | null;
       if (!img || !frame) return;
-      const fail = () => { frame.outerHTML = PLACEHOLDER(fig.dataset.src || ''); fig.classList.add('pending'); };
+      const fail = () => { frame.outerHTML = PLACEHOLDER(fig.dataset.src || ''); fig.classList.add('pending'); fig.querySelector('.shot-lang')?.remove(); };
       if (img.complete && img.naturalWidth === 0) fail();
       else img.addEventListener('error', fail, { once: true });
+    });
+
+    // English / Tigrigna choice for screenshots that have both. The choice is
+    // kept for the whole guide, so a Tigrigna reader sets it once.
+    const setShotLang = (lang: 'en' | 'ti') => {
+      root.querySelectorAll<HTMLElement>('figure.shot.has-ti').forEach((fig) => {
+        fig.dataset.view = lang;
+        fig.querySelectorAll<HTMLButtonElement>('[data-shot-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.shotLang === lang)));
+      });
+    };
+    let saved: 'en' | 'ti' = 'en';
+    try { if (localStorage.getItem('guide.shotLang') === 'ti') saved = 'ti'; } catch { /* storage unavailable */ }
+    setShotLang(saved);
+    root.querySelectorAll<HTMLButtonElement>('[data-shot-lang]').forEach((b) => {
+      b.onclick = () => {
+        const lang = b.dataset.shotLang === 'ti' ? 'ti' : 'en';
+        setShotLang(lang);
+        try { localStorage.setItem('guide.shotLang', lang); } catch { /* ignore */ }
+      };
     });
   }, [doc]);
 

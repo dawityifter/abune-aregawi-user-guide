@@ -16,6 +16,13 @@ related: members/managing-members, members/member-self-service, reports/tax-stat
 
 ## Adding a spouse or child
 
+:::screenshot images/member/family.png | A member’s Spouse & Dependents page
+ti: images/ti/member/family.png
+1 @ 80,22 **Add Dependent** opens the form
+2 @ 79,44 **Edit** or **Delete** a person
+:::
+
+
 There are two ways.
 
 **Staff (Secretary/Admin):**

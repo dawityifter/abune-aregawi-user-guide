@@ -22,6 +22,20 @@ After you sign in you land on the **Dashboard**. From the top it shows:
 3. **Your standing**: membership dues for the year (with **Pay my dues** and **See your dues** when a balance is due) and what you have given this year. A member with a pledge in the running drive also sees **how much of the pledge has been given** and **Pay toward my pledge**, which opens the give page with **Apply to my pledge** already ticked.
 4. **Finish your profile**, if details are still missing, then parish news.
 
+:::screenshot images/member/dashboard.png | The top of a member’s Dashboard: today in the Church, the next service, this week at the parish
+ti: images/ti/member/dashboard.png
+1 @ 5,58 **This week at the parish**: events staff have published
+2 @ 6,74 **Add to my calendar** downloads the event for your phone’s calendar
+3 @ 7,44 **Next service**, with **Directions**
+:::
+
+:::screenshot images/member/dashboard-more.png | Further down: your standing and the Finish your profile card
+ti: images/ti/member/dashboard-more.png
+1 @ 6,61 **Finish your profile** lists what is still missing
+2 @ 6,74 **Complete my profile** opens your profile with the first missing item selected
+3 @ 30,74 **Not now** hides the card
+:::
+
 Below that, on a computer, are two lists of links. On a phone there are four quick links instead (**Family**, **My Service**, **Gallery**, **Help**), because the rest are in the **Give** tab and **More** menu described below.
 
 **Your church** — everyone who is signed in sees these:
@@ -53,6 +67,24 @@ A **Secretary** may use the Admin Dashboard, but the Dashboard does not show the
 :::screenshot images/getting-started/dashboard.png | The Dashboard’s link lists. Staff also see “Church administration”
 1 @ 22,14 Your church: links every member has
 2 @ 22,66 Church administration: depends on your role
+:::
+
+### On a phone
+
+On a phone the same Dashboard is one column, with four tabs at the bottom: **Today**, **Calendar**, **Giving** and **More**. **More** holds the language choice, your profile, family, departments, gallery, board, bylaw, **Make a Pledge**, **Help** and **Sign Out**.
+
+:::screenshot images/mobile/dashboard.png | A phone’s Dashboard, with the four tabs at the bottom
+ti: images/ti/mobile/dashboard.png
+:::
+
+:::screenshot images/mobile/more.png | The More menu on a phone: language choice at the top, then the other pages
+ti: images/ti/mobile/more.png
+1 @ 45,41 **English / ትግርኛ**: the whole application, and these screenshots, switch language
+2 @ 3,48 **My Profile** and the other pages
+:::
+
+:::screenshot images/mobile/giving.png | The Giving tab: Give, My dues, Statements and Make a Pledge
+ti: images/ti/mobile/giving.png
 :::
 
 ## The Treasurer Dashboard

@@ -50,6 +50,10 @@ for (const [slug, p] of pages) {
   }
   for (const m of p.body.matchAll(/^:::screenshot\s+(\S+)\s*\|\s*(.*)$/gm)) {
     shots.push({ page: slug, path: m[1], caption: m[2], exists: existsSync(join(root, 'public', m[1])) });
+    // Optional Tigrigna twin of the screenshot: a "ti: <path>" line inside the block.
+    const block = p.body.slice(m.index, p.body.indexOf('\n:::', m.index + 3));
+    const ti = block.match(/^ti:\s*(\S+)\s*$/m);
+    if (ti) shots.push({ page: slug, path: ti[1], caption: `${m[2]} (Tigrigna)`, exists: existsSync(join(root, 'public', ti[1])) });
   }
   // Guard rails: secrets and real-looking phone numbers
   if (/sk_live_|pk_live_|AIza[0-9A-Za-z_-]{20,}|-----BEGIN|postgres(ql)?:\/\/[^<\s]*:[^<\s]*@/.test(p.body)) errors.push(`${p.file}: looks like it contains a secret`);

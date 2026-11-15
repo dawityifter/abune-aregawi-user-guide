@@ -21,7 +21,18 @@ related: donations/card-and-ach-by-treasurer, reconciliation/reviewing-bank-tran
 6. The page shows “Payment successful! Thank you for your donation.”
 :::
 
+:::screenshot images/member/give.png | The Give page: amount, payment method and card details
+ti: images/ti/member/give.png
+1 @ 17,22 The page is titled **Online Donation**
+2 @ 17,44 **Payment Method**: card or bank account
+3 @ 19,55 **Card Information**; a signed-in member’s name is filled in
+:::
+
 **Paying dues.** A signed-in member who comes from **Pay my dues** sees the same page headed **Paying your {year} membership dues**, with the balance filled in. The gift is recorded as membership dues for that year rather than as a donation, and anything above what is owed for the year is applied to the following year. The pledge option is not offered on that page, so a dues payment is never turned into a pledge payment.
+
+:::screenshot images/mobile/give.png | The Give page on a phone
+ti: images/ti/mobile/give.png
+:::
 
 On a phone or computer with Apple Pay or Google Pay set up, a wallet button appears above the card form once an amount of $1 or more is chosen. Tapping it pays with the wallet and records the gift exactly like a card gift. Devices without a wallet do not see it.
 
