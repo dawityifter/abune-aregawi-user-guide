@@ -129,6 +129,29 @@ Use **Help** in the top menu, or in **More** on a phone, to open this guide. It 
 
 Click your name or **Sign Out** in the top bar. On a phone, open **More** at the bottom and choose **Sign Out**. On a shared computer, always sign out when you finish.
 
+## How long you stay signed in
+
+The application signs you out by itself when it has not been used for a while. Using it means clicking, tapping, typing or scrolling; leaving a page open on the screen does not count.
+
+| Who | Where | Signed out after |
+|---|---|---|
+| Staff (treasurer, secretary, administrator and every other role above member) | A computer or tablet | **2 hours** without use |
+| Staff | Their phone | 30 days without use |
+| Members | Any device | 30 days without use |
+
+- Using the application in one browser tab keeps your other tabs on the same computer signed in.
+- Closing the tab does not stop the clock. If you come back after the limit, you are asked to sign in again.
+- **Staff on a computer get a warning** five minutes before the end: “Are you still there?” Choose **Stay signed in** to carry on, or **Sign out now**.
+- After an automatic sign-out the sign-in page says why: “You were signed out because the app was not used for a while.”
+
+:::warning Save your work
+Anything typed but not saved is lost when you are signed out. Treasurers entering several payments should save each one before stepping away.
+:::
+
+:::note Everyone signed in again once, in November 2026
+When these limits started, every existing sign-in ended once, and the sign-in page asked “For your security, please sign in again.” That was expected, not a fault.
+:::
+
 ## When signing in does not work
 
 | What you see | Likely cause | What to do |

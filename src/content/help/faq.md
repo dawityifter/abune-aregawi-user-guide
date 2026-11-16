@@ -3,7 +3,7 @@ title: Frequently asked questions
 order: 1
 audience: Everyone
 summary: Answers to the questions treasurers, administrators and members actually ask, each with the cause, how to check, the fix, how to confirm it worked, and when to escalate.
-updated: 2026-11-11
+updated: 2026-11-15
 related: help/troubleshooting, help/incident-history, help/glossary
 ---
 
@@ -136,6 +136,14 @@ Compare the pledge’s **Paid** with the member’s Pledge Drive payments on Mem
   4. On a phone without signal, connect to Wi-Fi.
 - **Confirm:** you reach your Dashboard.
 - **Escalate when:** nobody at all can sign in (a system problem), or one person still can’t after trying another browser.
+
+### Why was I signed out?
+
+- **Likely cause:** the application was not used for a while. Staff on a computer or tablet are signed out after **2 hours** without use; everyone else, and staff on their phone, after 30 days.
+- **Fix:** sign in again. Save any work before stepping away; unsaved entries are lost.
+- **Escalate when:** you are signed out while actively using the application.
+
+More: [How long you stay signed in](#/getting-started/signing-in?h=how-long-you-stay-signed-in).
 
 ### I signed in, but it asks me to register again
 

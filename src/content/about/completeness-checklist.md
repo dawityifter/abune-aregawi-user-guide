@@ -3,7 +3,7 @@ title: Documentation coverage checklist
 order: 2
 audience: Technical administrator, guide maintainers
 summary: Every capability found in the application, the page that documents it, and how it was verified.
-updated: 2026-11-14
+updated: 2026-11-15
 related: about/open-questions, about/screenshot-checklist, about/maintaining-this-guide
 ---
 
@@ -14,6 +14,7 @@ related: about/open-questions, about/screenshot-checklist, about/maintaining-thi
 | Capability | Route / screen | Documented in | Status |
 |---|---|---|---|
 | Phone sign-in, joining (3 screens), welcome page, Finish your profile card | `/login`, `/register` | [Signing in](#/getting-started/signing-in) | Verified |
+| Automatic sign-out after inactivity (staff on a computer 2 hours, otherwise 30 days), the “Are you still there?” warning | all pages, `/login` notice | [Signing in](#/getting-started/signing-in?h=how-long-you-stay-signed-in), [FAQ](#/help/faq) | Verified |
 | Dashboard links | `/dashboard` | [Finding your way](#/getting-started/finding-your-way) | Verified |
 | Top menu, including **Help** (opens this guide) | header, phone **More** | [Finding your way](#/getting-started/finding-your-way) | Verified |
 | Profile | `/profile` | [Member self-service](#/members/member-self-service) | Verified |
