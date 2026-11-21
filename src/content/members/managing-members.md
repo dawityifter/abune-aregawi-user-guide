@@ -3,7 +3,7 @@ title: Finding, adding and editing members
 order: 1
 audience: Secretary, Admin
 summary: Using Manage Members to search, add a member, edit their details, and deactivate a record.
-updated: 2026-11-14
+updated: 2026-11-20
 related: members/households-and-dependents, members/duplicate-and-incorrect-records, administration/roles-and-permissions
 ---
 
@@ -22,8 +22,25 @@ At the top are counts: **Total Households** (registered members), **Total Depend
 Below them you can:
 
 - **Search** by name, email or phone.
-- Filter by **Role**, by **Status** (Active / Inactive), and by **Address** (Missing address / Has address). Use **Missing address** to find records that need completing before statements go out.
+- Filter by **Role**, by **Status** (Active / Inactive), by **Address** (Missing address / Has address), and by **Household** (Heads of household / Household members). Use **Missing address** to find records that need completing before statements go out.
 - Use **Previous** / **Next** to page through results.
+
+### Head of household or household member
+
+A small badge on the corner of each member's initials shows where they sit in their household:
+
+| Badge | Meaning |
+|---|---|
+| Blue house | **Head of household**: the record the household's dues, pledges and tax statement belong to. |
+| Purple people | **Household member**: a member with their own record and sign-in who belongs to someone else's household, such as a spouse who registered under the head, or a dependent who was promoted. The line under their name reads **Household of:** and the head's name. |
+
+Hover over the badge to see the label. For a household member it also names the head of household and their member number. If the head is not on the list, the badge just says **Household member**.
+
+Children and other dependents without their own record are not rows in this list. They are counted under **Total Dependents** and the "dependents" count under each head's name. See [Households and dependents](#/members/households-and-dependents).
+
+:::tip Checking for a misplaced spouse
+Filter **Household** to **Heads of household** and search a family name. Two heads with the same surname at the same address are often a spouse who registered separately. See [Duplicate and incorrect records](#/members/duplicate-and-incorrect-records).
+:::
 
 :::screenshot images/members/member-list.png | Manage Members: totals, filters, and the member table
 1 @ 87,25 Add Member
