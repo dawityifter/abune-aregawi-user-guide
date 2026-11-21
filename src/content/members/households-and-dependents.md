@@ -3,7 +3,7 @@ title: Households and dependents
 order: 2
 audience: Secretary, Admin, Members
 summary: How heads of household, spouses and children are linked, how dues and statements are shared, and promoting a grown child to their own account.
-updated: 2026-11-11
+updated: 2026-11-20
 related: members/managing-members, members/member-self-service, reports/tax-statements
 ---
 
@@ -25,7 +25,7 @@ ti: images/ti/member/family.png
 
 There are two ways.
 
-**Staff (Secretary/Admin):**
+**Staff (Secretary/Admin):** Church Leadership can see every household's dependents but can change only their own.
 
 :::steps
 1. **Admin Panel → Manage Members**, find the head of household.
@@ -56,7 +56,7 @@ When a child grows up and should have their own membership, for example to pay t
 :::
 
 :::admin
-Promoting needs **Admin** or **Church Leadership**.
+Promoting needs **Admin**, **Church Leadership** or **Secretary**.
 :::
 
 ## Common problems

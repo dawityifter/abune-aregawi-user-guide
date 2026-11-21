@@ -13,6 +13,8 @@ The member list lives in **Admin Panel → Manage Members**. Secretaries reach i
 - **View the list:** Admin, Treasurer, Church Leadership, Secretary
 - **Add and edit members:** Admin, Secretary
 - **Deactivate (“delete”) a member:** Admin only
+
+Church Leadership sees the list without **Add Member**, **Edit** or dependents buttons. See [Church Leadership is view-only](#/getting-started/roles-and-permissions).
 :::
 
 ## The member list

@@ -3,14 +3,14 @@ title: Zelle payments
 order: 5
 audience: Treasurer, Admin
 summary: How Zelle emails enter Zelle Review, matching each to a member, creating the payment, payments sent on someone else’s behalf, and how the bank statement confirms them without duplicates.
-updated: 2026-11-11
+updated: 2026-11-21
 related: reconciliation/reviewing-bank-transactions, reconciliation/finding-duplicates, help/incident-history, pledges/payments-and-pledges
 ---
 
 Members send Zelle gifts to the church’s Zelle email address, which is shown on the Give page. Each time, Chase sends a **notification email** (“… sent you money”) to that mailbox, and later the payment appears on the **bank statement**. The application uses both: the **email** to record the gift quickly, and the **bank line** to confirm it.
 
 :::admin
-**Zelle Review** is for **Treasurer** and **Admin** only.
+**Zelle Review** is for **Treasurer** and **Admin**. **Church Leadership** can see the list but cannot sync, match, create or ignore anything.
 :::
 
 ## How Zelle emails arrive

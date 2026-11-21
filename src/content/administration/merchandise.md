@@ -3,7 +3,7 @@ title: Event merchandise (t-shirts)
 order: 7
 audience: Admin, Treasurer, Bookkeeper, Church Leadership, Secretary
 summary: Online t-shirt orders, fulfilling them, recording cash sales, and the inventory count.
-updated: 2026-11-11
+updated: 2026-11-20
 status: needs-confirmation
 related: donations/how-money-arrives, reports/tax-statements
 ---
@@ -15,6 +15,8 @@ The public **/merch** page sells event shirts online through **Stripe Checkout**
 ## Orders
 
 **Merchandise Orders** lists shirts sold online: **Ordered**, **Purchaser**, **Sizes**, **Payment**, **Fulfillment**, and the total including any tax. Filter by payment status and by fulfillment (**Unfulfilled** / **Fulfilled**). When a shirt is handed over, click **Mark fulfilled**.
+
+Church Leadership sees the orders and the stock count but cannot mark orders fulfilled or change stock: the **Fulfillment** column shows the status as text, and the **Sold for cash** and **Set count** columns are hidden.
 
 Orders are recorded automatically when Stripe confirms payment. An order that is never paid expires, and its shirts go back on sale after 30 minutes.
 

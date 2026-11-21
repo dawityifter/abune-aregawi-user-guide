@@ -3,7 +3,7 @@ title: Departments and ministries
 order: 2
 audience: Admin, Secretary, Church Leadership, department leaders
 summary: Creating departments, managing members, and running meetings and tasks.
-updated: 2026-11-14
+updated: 2026-11-20
 related: administration/sms-communications, members/member-self-service
 ---
 
@@ -11,8 +11,10 @@ related: administration/sms-communications, members/member-self-service
 
 :::admin
 - **View:** Admin, Church Leadership, Secretary, Treasurer
-- **Create and edit:** Admin, Church Leadership, Secretary
+- **Create and edit:** Admin, Secretary
 - **Delete:** Admin
+
+Church Leadership sees every department but no **Create**, **Edit**, **Deactivate**, **Add Member** or remove buttons. A Church Leadership user who leads or belongs to a department still manages it with their role in that department. See [Church Leadership is view-only](#/getting-started/roles-and-permissions).
 :::
 
 ## Creating a department
