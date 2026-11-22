@@ -3,7 +3,7 @@ title: Ownership and responsibility matrix
 order: 6
 audience: Church leadership
 summary: A proposed model of who is responsible for each part of running the application, for leadership to assign to named people.
-updated: 2026-11-11
+updated: 2026-11-21
 related: continuity/taking-over, continuity/integrations, getting-started/roles-and-permissions
 ---
 
@@ -26,7 +26,7 @@ Leadership should fill in the **Named person** and **Backup person** columns, re
 | Financial reporting to the board | Treasurer | Treasurer | | |
 | Independent review of the books | Auditor | Auditor | | |
 | SMS communication | Secretary | Secretary | | |
-| New-member welcome, announcements | Relationship department | Relationship | | |
+| New-member welcome, announcements and events | Relationship department | Relationship | | |
 | Voicemail and volunteer follow-up | Secretary | Secretary | | |
 | User access (roles) management | Application administrator | Admin (two people) | | |
 

@@ -3,14 +3,14 @@ title: Outreach, welcomes and announcements
 order: 4
 audience: Relationship Department, Admin
 summary: Welcoming newly registered members, public announcements, parish events, and the Church TV view.
-updated: 2026-11-14
+updated: 2026-11-21
 related: administration/sms-communications, members/managing-members
 ---
 
 **Dashboard → Relationship Department** opens **Outreach & Member Relations**.
 
 :::admin
-**Admin** and **Relationship** only.
+**Admin** and **Relationship**. **Church Leadership** can also open it: it publishes announcements and events like Relationship, and sees the welcome lists but cannot mark anyone welcomed.
 :::
 
 ## Welcoming new members
@@ -35,7 +35,7 @@ The **Events** tab, beside Public Announcements, is where the parish’s dated e
 - Times are the church’s local times. An event at 6 pm is at 6 pm in every member’s calendar.
 
 :::note Who can use it
-The same people who publish announcements: **Admin** and **Relationship**.
+The same people who publish announcements: **Admin**, **Relationship** and **Church Leadership**.
 :::
 
 ## Church TV View

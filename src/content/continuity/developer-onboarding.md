@@ -3,7 +3,7 @@ title: Developer onboarding checklist
 order: 5
 audience: Replacement developer, technical administrator
 summary: A practical checklist for a new developer taking over the application — access, local setup, reading list, business rules and known limitations.
-updated: 2026-11-13
+updated: 2026-11-21
 related: technical/architecture, technical/database-and-migrations, technical/data-corrections, about/open-questions
 ---
 
@@ -64,7 +64,7 @@ npm start                   # http://localhost:3000 (the Firebase key only allow
 - The nightly database dump keeps about 4 days on the server and one encrypted copy in Google Drive, with no failure alert. See [Backup and recovery](#/continuity/backup-and-recovery)
 - Bounced checks are flagged but not reversed; the accounting policy is undecided
 - Sunday Deposit Check flags can’t be explained or cleared
-- Some frontend role flags are broader than the server allows (Leadership and Relationship member edit, AR Team SMS, member list for Bookkeeper, AR Team and Auditor)
+- Some frontend role flags are broader than the server allows (AR Team SMS, member list for Bookkeeper, AR Team and Auditor)
 - Zelle Review is largely untranslated; several Tigrigna strings await native review (`tigrigna-translation-review.md`)
 - `/api/transactions/member-summaries` selects a non-existent attribute (documented in `docs/BENEVITY_IMPORT.md`)
 - The Financial Overview’s bank balance picks the highest-id row on a multi-row day

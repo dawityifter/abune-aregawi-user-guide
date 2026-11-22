@@ -22,9 +22,9 @@ New members automatically get the **Member** role when they register. Only an **
 | **AP Team (Expenses)** | Expense side: record and edit expenses, manage vendors | Finance volunteer for bills |
 | **Budget Committee** | Read financial records and reports; budget approval | Budget committee members |
 | **Auditor/Reviewer** | Read-only view of financial records and activity logs | Internal auditor |
-| **Church Leadership** | **View-only** oversight of members, finances, departments, merchandise and activity logs; sends SMS to the congregation | Board members, priest |
+| **Church Leadership** | **View-only** oversight of members, finances, departments, merchandise and activity logs; sends SMS to the congregation and publishes announcements and events | Board members, priest |
 | **Secretary** | Member registration and edits, SMS, documentation | Church secretary |
-| **🤝 Relationship Department** | Welcoming new members, outreach dashboard, announcements | Relationship department |
+| **🤝 Relationship Department** | Welcoming new members; adding and editing member records; announcements and events | Relationship department |
 | **Member** | Own profile, household, dues and giving; give online | Every registered member |
 | **Guest** | Public pages only | Not signed in |
 
@@ -52,6 +52,7 @@ Church Leadership **can still**:
 - **Email meeting minutes** to a department.
 - **Promote a dependent** to their own member account.
 - **Archive voicemails.**
+- **Publish public announcements and parish events**: add, edit and cancel them, and set the TV rotation, on the **Outreach** page. There it also sees the **Pending Welcomes** and **Already Welcomed** lists, but cannot mark anyone welcomed.
 - Do everything a **Member** can for themselves: their own profile, giving, pledges and household.
 - Manage meetings, tasks and members in a **department they lead or belong to**, with the rights of their role in that department.
 
@@ -59,14 +60,23 @@ Church Leadership **can still**:
 The view-only rule applies only when Church Leadership is a person's **only** staff role. A board member who is also, say, **Secretary** or **Treasurer** keeps everything that role allows and does not see the notice.
 :::
 
+## Relationship manages members
+
+The **Relationship** department welcomes newcomers and keeps member records up to date:
+
+- **Admin Panel → Manage Members** is open to Relationship, with **Add Member** and **Edit** for every member, including dependents. It is the only Admin Panel tab Relationship sees.
+- Relationship cannot **delete** a member or **change anyone's role**; those stay with the Administrator.
+- Member finances (pledges, dues) are not shown to Relationship in the member list.
+- On the **Outreach** page it welcomes new members and publishes announcements and events, as before.
+
 ## What each role can do — at a glance
 
 ✔ = allowed, ◐ = view only, blank = not allowed. The server enforces these limits.
 
 | Task | Admin | Treasurer | Bookkeeper | AR | AP | Budget | Auditor | Leadership | Secretary | Relationship |
 |---|---|---|---|---|---|---|---|---|---|---|
-| View the member list | ✔ | ◐ | | | | | | ◐ | ✔ | ◐ new members only |
-| Edit members | ✔ | | | | | | | | ✔ | |
+| View the member list | ✔ | ◐ | | | | | | ◐ | ✔ | ✔ |
+| Add and edit members | ✔ | | | | | | | | ✔ | ✔ |
 | Delete members, change roles | ✔ | | | | | | | | | |
 | Record and edit payments | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | View payments and reports | ✔ | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | |
@@ -76,7 +86,8 @@ The view-only rule applies only when Church Leadership is a person's **only** st
 | Create and edit pledge drives | ✔ | | | | | | | | | |
 | Record pledges | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | Send SMS | ✔ | | | | | | | ✔ | ✔ | |
-| Outreach & announcements | ✔ | | | | | | | | | ✔ |
+| Welcome new members | ✔ | | | | | | | ◐ | | ✔ |
+| Announcements and events | ✔ | | | | | | | ✔ | | ✔ |
 | Activity logs | ✔ | | | | | | | ✔ | | |
 | Delete payments or expenses | ✔ (by a technical administrator) | | | | | | | | | |
 
@@ -85,7 +96,6 @@ It reflects the checks in the application’s code as of the date at the top of 
 :::
 
 :::warning Known gaps between what you see and what is allowed
-- **Relationship** sees member-edit buttons, but the server only accepts member edits from **Admin** and **Secretary**. Their saves fail with “Access denied”.
 - **Secretary** can open the Admin Dashboard at `/admin`, but the Dashboard shows no link to it.
 - **AR Team** sees the **Communications** link, but only Admin, Church Leadership and Secretary can actually send SMS.
 - **Bookkeeper**, **AR Team** and **Auditor** are described as able to view all members, but the member list only loads for Admin, Treasurer, Church Leadership and Secretary.
