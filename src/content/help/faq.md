@@ -3,7 +3,7 @@ title: Frequently asked questions
 order: 1
 audience: Everyone
 summary: Answers to the questions treasurers, administrators and members actually ask, each with the cause, how to check, the fix, how to confirm it worked, and when to escalate.
-updated: 2026-11-15
+updated: 2026-11-21
 related: help/troubleshooting, help/incident-history, help/glossary
 ---
 
@@ -139,7 +139,7 @@ Compare the pledge’s **Paid** with the member’s Pledge Drive payments on Mem
 
 ### Why was I signed out?
 
-- **Likely cause:** the application was not used for a while. Staff on a computer or tablet are signed out after **2 hours** without use; everyone else, and staff on their phone, after 30 days.
+- **Likely cause:** the application was not used for a while. Staff on a computer or tablet are signed out after **2 hours** without use, unless they ticked **Keep me signed in on this computer** when signing in; everyone else, and staff on their phone, after 30 days. Staff who are signed out too often on their own computer can tick that box at the next sign-in.
 - **Fix:** sign in again. Save any work before stepping away; unsaved entries are lost.
 - **Escalate when:** you are signed out while actively using the application.
 

@@ -3,7 +3,7 @@ title: Security habits for everyone
 order: 5
 audience: Everyone with a staff role
 summary: Simple rules that protect members’ personal and financial information.
-updated: 2026-11-15
+updated: 2026-11-21
 related: getting-started/roles-and-permissions, continuity/account-recovery, technical/configuration-and-secrets
 ---
 
@@ -14,7 +14,7 @@ The application holds members’ names, phone numbers, addresses, baptism names,
 :::steps
 1. **Keep your phone locked.** Signing in uses text-message codes, so anyone holding your unlocked phone can sign in as you.
 2. **Never share a sign-in code.** No one from the church will ever ask you for the code. Anyone asking is trying to get into your account.
-3. **Sign out on shared computers.** Use **Sign Out** when you finish, and close the browser. Staff on a computer are also signed out automatically after 2 hours without use, but don’t rely on that. See [How long you stay signed in](#/getting-started/signing-in?h=how-long-you-stay-signed-in).
+3. **Sign out on shared computers.** Use **Sign Out** when you finish, and close the browser. Staff on a computer are also signed out automatically after 2 hours without use, but don’t rely on that. Never tick **Keep me signed in on this computer** on a shared computer; on your own computer, set the screen to lock when you step away. See [How long you stay signed in](#/getting-started/signing-in?h=how-long-you-stay-signed-in).
 4. **Don’t download member lists unless you need them.** Printed or saved reports, such as the household directory, contain personal information. Store them safely and shred or delete them after use.
 5. **Don’t send member information by text, WhatsApp or personal email.** Share inside the application, or by the church’s official email.
 6. **Report anything odd at once.** For example, a role you didn’t ask for, a payment you didn’t record, or a text code you didn’t request. Tell the technical administrator and the treasurer.

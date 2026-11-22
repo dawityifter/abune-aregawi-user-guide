@@ -3,7 +3,7 @@ title: Signing in and registering
 order: 2
 audience: Everyone
 summary: How to sign in with a phone number and text-message code, how newcomers join the parish in three short screens, and what to do when signing in fails.
-updated: 2026-11-15
+updated: 2026-11-21
 related: getting-started/finding-your-way, help/faq, members/managing-members
 ---
 
@@ -28,7 +28,7 @@ Members and newcomers start in the same place. If your phone number is already o
 2. Type your **ten-digit phone number**. You don’t need dashes; the site formats it for you.
 3. Complete the **“I’m not a robot” check** (reCAPTCHA) when it appears.
 4. Click **Text me a code**. A text message with a six-digit code arrives within a minute.
-5. Type the code under **Sign-in code** and click **Continue**. Many phones offer to fill the code in for you from the message.
+5. Type the code under **Sign-in code**. Sign-in continues by itself as soon as the sixth digit is in; **Continue** is there if you prefer to click. Many phones and computers offer to fill the code in for you from the message.
 6. You arrive on your **Dashboard**. Your name appears at the top right.
 :::
 
@@ -50,6 +50,7 @@ On the code screen:
 - **Send again** becomes available 30 seconds after the code was sent. It takes you back one step with your number still filled in; complete the robot check again and click **Text me a code**.
 - **Use a different number** goes back and clears the number.
 - “That code didn’t match” means a digit was mistyped. The code can be typed or pasted with or without spaces.
+- On a computer or tablet the screen also shows **Keep me signed in on this computer**, unticked, above the code box. Tick it **before** entering the code, because sign-in continues as soon as the code is complete. Tick it only on a computer that is yours alone; see [How long you stay signed in](#/getting-started/signing-in?h=how-long-you-stay-signed-in). Phones don’t show it, because they already stay signed in for 30 days.
 
 :::success Signed in correctly
 Your first name shows in the top bar, and the Dashboard lists **Your church** links: Profile, Dues, Give, and so on. Staff also see a **Church administration** list with links such as **Treasurer** or **Admin Panel**.
@@ -136,6 +137,7 @@ The application signs you out by itself when it has not been used for a while. U
 | Who | Where | Signed out after |
 |---|---|---|
 | Staff (treasurer, secretary, administrator and every other role above member) | A computer or tablet | **2 hours** without use |
+| Staff who ticked **Keep me signed in on this computer** | That computer | 30 days without use |
 | Staff | Their phone | 30 days without use |
 | Members | Any device | 30 days without use |
 
@@ -143,6 +145,15 @@ The application signs you out by itself when it has not been used for a while. U
 - Closing the tab does not stop the clock. If you come back after the limit, you are asked to sign in again.
 - **Staff on a computer get a warning** five minutes before the end: “Are you still there?” Choose **Stay signed in** to carry on, or **Sign out now**.
 - After an automatic sign-out the sign-in page says why: “You were signed out because the app was not used for a while.”
+
+### Keep me signed in on this computer
+
+Staff who work in the application every day can tick **Keep me signed in on this computer** on the code screen, before entering the code. That computer then keeps you signed in until it goes 30 days without use, like a phone, and the “Are you still there?” warning no longer appears.
+
+- The choice belongs to **that browser on that computer**. Chrome and Safari on the same laptop are separate, and other computers still sign you out after 2 hours.
+- **Sign Out** forgets the choice. The next sign-in on that computer asks again.
+- **Never tick it on a shared or church computer.** Anyone who sits down at it could open member and financial records as you.
+- On your own computer, set the screen to lock after a few minutes away. With the box ticked, the screen lock is what keeps others out.
 
 :::warning Save your work
 Anything typed but not saved is lost when you are signed out. Treasurers entering several payments should save each one before stepping away.
