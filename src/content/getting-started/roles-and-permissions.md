@@ -21,7 +21,7 @@ New members automatically get the **Member** role when they register. Only an **
 | **AR Team (Income)** | Income side: record payments and pledges, track contributions, send receipts | Finance volunteer for income |
 | **AP Team (Expenses)** | Expense side: record and edit expenses, manage vendors | Finance volunteer for bills |
 | **Budget Committee** | Read financial records and reports; budget approval | Budget committee members |
-| **Auditor/Reviewer** | Read-only view of financial records and activity logs | Internal auditor |
+| **Auditor/Reviewer** | **View-only** access to the books, member records and activity logs | Internal auditor |
 | **Church Leadership** | **View-only** oversight of members, finances, departments, merchandise and activity logs; sends SMS to the congregation and publishes announcements and events | Board members, priest |
 | **Secretary** | Member registration and edits, SMS, documentation | Church secretary |
 | **🤝 Relationship Department** | Welcoming new members; adding and editing member records; announcements and events | Relationship department |
@@ -30,14 +30,14 @@ New members automatically get the **Member** role when they register. Only an **
 
 ## Church Leadership is view-only
 
-Church Leadership can open the **Admin Panel** and the **Treasurer Dashboard** and see everything there, but cannot add, change or delete records. Both dashboards show this notice to a Church Leadership user:
+Church Leadership can open the **Admin Panel** and the **Treasurer Dashboard** and see everything there, but cannot add, change or delete records. Both dashboards show this notice to a Church Leadership or Auditor user:
 
-> **View-only access.** As Church Leadership you can view and monitor all activity, but you can't add, change or delete records. If something needs changing, contact the responsible role: the Treasurer for finances, the Secretary for member records, or the Administrator for roles and settings.
+> **View-only access.** You can view and monitor all activity, but you can't add, change or delete records. If something needs changing, contact the responsible role: the Treasurer for finances, the Secretary for member records, or the Administrator for roles and settings.
 
 Edit buttons are hidden from Church Leadership on Manage Members, Departments, Merchandise and the Gallery, and throughout the Treasurer Dashboard:
 
 - **Payments:** the details panel has no **Edit** button.
-- **Loans:** no **Record Loan** or **Repayment** buttons.
+- **Loans:** sees the loans list, but no **Record Loan** or **Repayment** buttons.
 - **Bank:** no statement upload, no **Import Benevity Donations**, no **Auto-reconcile pending**, no selection checkboxes or **Undo**. A bank line's details show no actions.
 - **Zelle:** sees the **Zelle Review** list, but no **Sync Now**. Payments not yet recorded show **Not matched yet** instead of the matching form.
 - **Square:** sees the **Square Review** list, but no date range or **Sync from Square**, no selection, and no action row under each payment.
@@ -45,6 +45,15 @@ Edit buttons are hidden from Church Leadership on Manage Members, Departments, M
 - **Payments**, **Pledges**, **Expenses**, **Employees** and **Vendors** already showed their add and edit buttons only to the roles that can use them.
 
 If they try a change anyway, the server refuses it with the same message.
+
+## Auditor is view-only too
+
+**Auditor/Reviewer** works exactly like Church Leadership above: the same notice, the same hidden buttons, the same refusals. It sees:
+
+- **Treasurer Dashboard:** every tab except **Backups**, including **Loans**, **Employees**, **Vendors** and the **Zelle** and **Square** review lists.
+- **Admin Panel:** **Manage Members** (read-only), **Fundraising** (read-only) and **Activity Logs**.
+
+Unlike Church Leadership, Auditor has **no exceptions**: it cannot send SMS, publish announcements or events, promote dependents or archive voicemails. Someone who holds Auditor and another staff role, such as Treasurer, keeps that role's rights; for a real check of the books, give Auditor to someone who does not also record the money.
 
 Church Leadership **can still**:
 
@@ -75,20 +84,20 @@ The **Relationship** department welcomes newcomers and keeps member records up t
 
 | Task | Admin | Treasurer | Bookkeeper | AR | AP | Budget | Auditor | Leadership | Secretary | Relationship |
 |---|---|---|---|---|---|---|---|---|---|---|
-| View the member list | ✔ | ◐ | | | | | | ◐ | ✔ | ✔ |
+| View the member list | ✔ | ◐ | | | | | ◐ | ◐ | ✔ | ✔ |
 | Add and edit members | ✔ | | | | | | | | ✔ | ✔ |
 | Delete members, change roles | ✔ | | | | | | | | | |
 | Record and edit payments | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | View payments and reports | ✔ | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | |
 | Bank reconciliation | ✔ | ✔ | ✔ | | | | | | | |
-| Zelle, Square, Benevity, Loans | ✔ | ✔ | | | | | | ◐ Zelle and Square review lists | | |
+| Zelle, Square, Benevity, Loans | ✔ | ✔ | | | | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
 | Record and edit expenses | ✔ | ✔ | ✔ | | ✔ | | | | | |
 | Create and edit pledge drives | ✔ | | | | | | | | | |
 | Record pledges | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | Send SMS | ✔ | | | | | | | ✔ | ✔ | |
 | Welcome new members | ✔ | | | | | | | ◐ | | ✔ |
 | Announcements and events | ✔ | | | | | | | ✔ | | ✔ |
-| Activity logs | ✔ | | | | | | | ✔ | | |
+| Activity logs | ✔ | | | | | | ◐ | ◐ | | |
 | Delete payments or expenses | ✔ (by a technical administrator) | | | | | | | | | |
 
 :::note Where this table comes from
@@ -98,7 +107,7 @@ It reflects the checks in the application’s code as of the date at the top of 
 :::warning Known gaps between what you see and what is allowed
 - **Secretary** can open the Admin Dashboard at `/admin`, but the Dashboard shows no link to it.
 - **AR Team** sees the **Communications** link, but only Admin, Church Leadership and Secretary can actually send SMS.
-- **Bookkeeper**, **AR Team** and **Auditor** are described as able to view all members, but the member list only loads for Admin, Treasurer, Church Leadership and Secretary.
+- **Bookkeeper** and **AR Team** are described as able to view all members, but the member list only loads for Admin, Treasurer, Church Leadership, Secretary, Relationship and Auditor.
 
 These are recorded in [open questions](#/about/open-questions) for the developer.
 :::

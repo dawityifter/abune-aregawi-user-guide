@@ -119,7 +119,7 @@ The tabs are in two rows, labelled **Core Workflow** and **Admin & Maintenance**
 | View payments, pledges, reports | Admin, Treasurer, Bookkeeper, AR Team, Auditor, Budget Committee, Church Leadership, Secretary (AP Team: payments and pledges only) |
 | Add or edit payments and pledges | Admin, Treasurer, Bookkeeper, AR Team |
 | Bank reconciliation (approve, link, record expenses) | Admin, Treasurer, Bookkeeper |
-| Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer |
+| Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer (Church Leadership and Auditor see Zelle, Square and Loans read-only) |
 | Add or edit expenses | Admin, Treasurer, Bookkeeper, AP Team |
 | Delete a payment or an expense | Admin only, and not from these screens. See [Correcting a payment](#/donations/correcting-a-payment) |
 
@@ -135,7 +135,7 @@ If you open a tab your role does not allow, it shows an error or “Access denie
 | **Merchandise** | Event merchandise (t-shirt) orders and inventory | Admin, Treasurer, Bookkeeper, Leadership, Secretary | [Merchandise](#/administration/merchandise) |
 | **Role Management** | Give people roles such as Treasurer or Secretary | Admin only | [Roles and permissions](#/administration/roles-and-permissions) |
 | **Departments** | Departments, ministries, their members, meetings and tasks | Admin, Church Leadership, Secretary, Treasurer | [Departments](#/administration/departments) |
-| **Activity Logs** | Who changed what, and when | Admin, Church Leadership | [Activity logs](#/administration/activity-logs) |
+| **Activity Logs** | Who changed what, and when | Admin, Church Leadership, Auditor | [Activity logs](#/administration/activity-logs) |
 | **Messages** | Voicemail inbox and volunteer requests | Admin, Church Leadership, Secretary | [Voicemail and volunteers](#/administration/voicemail-and-volunteers) |
 | **Survey Report** | Results of the church services survey | Admin, Secretary, Church Leadership | [Survey report](#/reports/survey-report) |
 
