@@ -3,14 +3,14 @@ title: Sending SMS (text messages)
 order: 3
 audience: Admin, Church Leadership, Secretary
 summary: Texting an individual, a department, pledge donors or all members, personalized messages, and cost.
-updated: 2026-11-11
+updated: 2026-11-21
 related: administration/departments, pledges/managing-pledges, continuity/integrations
 ---
 
 **Dashboard → Communications** opens **SMS Communications**. Messages are sent through **Twilio**, a paid text-message service. Each message costs money.
 
 :::admin
-Sending is allowed for **Admin**, **Church Leadership** and **Secretary**. AR Team also sees the link, but the server refuses its messages.
+Sending is allowed for **Admin**, **Church Leadership** and **Secretary**.
 :::
 
 ## Sending a message

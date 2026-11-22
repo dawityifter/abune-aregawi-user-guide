@@ -46,7 +46,7 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 
 | # | Gap |
 |---|---|
-| 18 | Frontend permissions broader than the server: AR Team sees SMS; Bookkeeper and AR Team are described as viewing all members. Saves or loads are refused |
+| 18 | Frontend permissions broader than the server: Bookkeeper is described as viewing all members, but the member list refuses it |
 | 19 | Secretary can use `/admin` but has no Dashboard link to it |
 | 20 | Zelle Review: no **Ignore** button (the server supports it); much of the screen is untranslated |
 | 21 | Sunday Deposit Check: no way to explain or clear a flag |

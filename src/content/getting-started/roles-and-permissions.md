@@ -18,8 +18,8 @@ New members automatically get the **Member** role when they register. Only an **
 | **Admin/Super Admin** | Full access to everything, including roles and deletion | One or two trusted administrators |
 | **Treasurer** | The main finance role: payments, expenses, pledges, bank reconciliation, Zelle, Square, Benevity, loans, reports | The treasurer |
 | **Bookkeeper** | Day-to-day finance: record payments and expenses, reconcile the bank, run reports. No budget approval, no Zelle/Square/Benevity/Loans screens | Assistant treasurer |
-| **AR Team (Income)** | Income side: record payments and pledges, track contributions, send receipts | Finance volunteer for income |
-| **AP Team (Expenses)** | Expense side: record and edit expenses, manage vendors | Finance volunteer for bills |
+| **AR Team (Income)** | Income side: record and edit payments, pledges and dues; reads member records and every financial transaction | Finance volunteer for income |
+| **AP Team (Expenses)** | Expense side: record and edit expenses; reads member records and every financial transaction | Finance volunteer for bills |
 | **Budget Committee** | Read financial records and reports; budget approval | Budget committee members |
 | **Auditor/Reviewer** | **View-only** access to the books, member records and activity logs | Internal auditor |
 | **Church Leadership** | **View-only** oversight of members, finances, departments, merchandise and activity logs; sends SMS to the congregation and publishes announcements and events | Board members, priest |
@@ -78,19 +78,28 @@ The **Relationship** department welcomes newcomers and keeps member records up t
 - Member finances (pledges, dues) are not shown to Relationship in the member list.
 - On the **Outreach** page it welcomes new members and publishes announcements and events, as before.
 
+## AR Team and AP Team
+
+The two finance-team roles split the work by direction of money, and both can see the whole picture:
+
+- **Both** read the member list (Admin Panel → **Manage Members**, read-only) and every financial screen on the Treasurer Dashboard: payments, pledges, member dues, expenses, bank lines, Zelle, Square, loans, employees, vendors and reports. On the screens they cannot act on, they see no action buttons.
+- **AR Team** records and edits **payments** with **Add Payment** and **Edit**, and records pledges and dues. It does not match Zelle or Square payments; that stays with the Treasurer.
+- **AP Team** records and edits **expenses** with **Add Expense** and **Edit**, picking the payee from the employee and vendor lists. Adding or changing an employee or vendor stays with the Administrator.
+- Neither reconciles the bank, sends SMS or changes member records.
+
 ## What each role can do — at a glance
 
 ✔ = allowed, ◐ = view only, blank = not allowed. The server enforces these limits.
 
 | Task | Admin | Treasurer | Bookkeeper | AR | AP | Budget | Auditor | Leadership | Secretary | Relationship |
 |---|---|---|---|---|---|---|---|---|---|---|
-| View the member list | ✔ | ◐ | | | | | ◐ | ◐ | ✔ | ✔ |
+| View the member list | ✔ | ◐ | | ◐ | ◐ | | ◐ | ◐ | ✔ | ✔ |
 | Add and edit members | ✔ | | | | | | | | ✔ | ✔ |
 | Delete members, change roles | ✔ | | | | | | | | | |
 | Record and edit payments | ✔ | ✔ | ✔ | ✔ | | | | | | |
-| View payments and reports | ✔ | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | |
-| Bank reconciliation | ✔ | ✔ | ✔ | | | | | | | |
-| Zelle, Square, Benevity, Loans | ✔ | ✔ | | | | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
+| View payments, expenses and reports | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ | |
+| Bank reconciliation | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ | |
+| Zelle, Square, Benevity, Loans | ✔ | ✔ | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
 | Record and edit expenses | ✔ | ✔ | ✔ | | ✔ | | | | | |
 | Create and edit pledge drives | ✔ | | | | | | | | | |
 | Record pledges | ✔ | ✔ | ✔ | ✔ | | | | | | |
@@ -106,8 +115,7 @@ It reflects the checks in the application’s code as of the date at the top of 
 
 :::warning Known gaps between what you see and what is allowed
 - **Secretary** can open the Admin Dashboard at `/admin`, but the Dashboard shows no link to it.
-- **AR Team** sees the **Communications** link, but only Admin, Church Leadership and Secretary can actually send SMS.
-- **Bookkeeper** and **AR Team** are described as able to view all members, but the member list only loads for Admin, Treasurer, Church Leadership, Secretary, Relationship and Auditor.
+- **Bookkeeper** is described as able to view all members, but the member list does not load for that role.
 
 These are recorded in [open questions](#/about/open-questions) for the developer.
 :::

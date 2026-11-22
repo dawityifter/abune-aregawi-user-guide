@@ -3,9 +3,13 @@ title: Uploading the Chase bank statement
 order: 2
 audience: Treasurer, Bookkeeper, Admin
 summary: Downloading the activity CSV from Chase, uploading it, reading the upload summary, and why overlapping downloads are safe.
-updated: 2026-11-11
+updated: 2026-11-21
 related: reconciliation/reviewing-bank-transactions, dashboard/sunday-deposit-check, reconciliation/finding-duplicates
 ---
+
+:::admin Who can upload
+**Admin**, **Treasurer** and **Bookkeeper**. The other finance roles can read the bank lines but not upload a statement.
+:::
 
 ## Download the CSV from Chase
 

@@ -55,7 +55,7 @@ Below that, on a computer, are two lists of links. On a phone there are four qui
 
 | Link | Who sees it | Opens |
 |---|---|---|
-| **Communications** | Admin, Church Leadership, Secretary (AR Team also sees the link, but sending is refused) | SMS sending page (`/sms`) |
+| **Communications** | Admin, Church Leadership, Secretary | SMS sending page (`/sms`) |
 | **Relationship Department** | Admin, Relationship, Church Leadership | Outreach dashboard (`/outreach`) |
 | **Treasurer** | Every finance role, plus Church Leadership and Secretary (view) | Treasurer Dashboard (`/treasurer`) |
 | **Admin Panel** | Admin, Church Leadership, Treasurer, Bookkeeper, Budget Committee, Auditor, AR Team, AP Team, Relationship | Admin Dashboard (`/admin`) |
@@ -116,10 +116,10 @@ The tabs are in two rows, labelled **Core Workflow** and **Admin & Maintenance**
 
 | Work | Allowed roles |
 |---|---|
-| View payments, pledges, reports | Admin, Treasurer, Bookkeeper, AR Team, Auditor, Budget Committee, Church Leadership, Secretary (AP Team: payments and pledges only) |
+| View payments, pledges, expenses, reports | Admin, Treasurer, Bookkeeper, AR Team, AP Team, Auditor, Budget Committee, Church Leadership, Secretary |
 | Add or edit payments and pledges | Admin, Treasurer, Bookkeeper, AR Team |
 | Bank reconciliation (approve, link, record expenses) | Admin, Treasurer, Bookkeeper |
-| Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer (Church Leadership and Auditor see Zelle, Square and Loans read-only) |
+| Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer (Church Leadership, Auditor, AR Team and AP Team see Zelle, Square and Loans read-only) |
 | Add or edit expenses | Admin, Treasurer, Bookkeeper, AP Team |
 | Delete a payment or an expense | Admin only, and not from these screens. See [Correcting a payment](#/donations/correcting-a-payment) |
 
