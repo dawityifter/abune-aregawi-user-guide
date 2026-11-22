@@ -28,7 +28,9 @@ The demo environment files (seed script, synthetic CSVs, settings) are not in th
 |---|---|
 | `getting-started/dashboard.png` | The staff view of the Dashboard. A **Finish your profile** card can now appear under the greeting (2026-11-14). The member view is covered by `member/dashboard-more.png`. |
 | `join/code.png` | On a computer the code screen now shows **Keep me signed in on this computer** with its warning above the code box (2026-11-21). The phone view is unchanged. |
-| `members/member-list.png` | Manage Members now shows a head-of-household or household-member badge on each member's initials, and a fifth filter, **Household** (2026-11-20). |
+| `members/member-list.png` | Manage Members now shows a head-of-household or household-member badge on each member's initials, and a fifth filter, **Household** (2026-11-20). Its page bar is now the shared compact one with **Rows** (2026-11-21). |
+| `reconciliation/bank-transactions.png` | The Bank Transactions list ends with the shared page bar, with **Rows** and a “Showing … of …” count, instead of Previous / Next (2026-11-21). |
+| `administration/role-management.png` | Role Management ends with the shared page bar (2026-11-21). |
 
 The Treasurer, Admin, SMS and Outreach screens cannot be captured with the demo sign-in: several panels read the Firebase sign-in directly, which demo mode does not provide, so they show “User not authenticated” or “Access Denied”. Retaking them needs the Firebase sign-in emulator, which the application is not set up for yet.
 

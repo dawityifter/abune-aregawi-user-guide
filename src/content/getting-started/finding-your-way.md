@@ -139,6 +139,17 @@ If you open a tab your role does not allow, it shows an error or “Access denie
 | **Messages** | Voicemail inbox and volunteer requests | Admin, Church Leadership, Secretary | [Voicemail and volunteers](#/administration/voicemail-and-volunteers) |
 | **Survey Report** | Results of the church services survey | Admin, Secretary, Church Leadership | [Survey report](#/reports/survey-report) |
 
+## Long lists
+
+Every long list (members, payments, expenses, bank lines, loans, activity logs and the rest) ends with the same bar:
+
+- **“Showing 51–60 of 486”** says where you are.
+- A few page numbers around the page you are on, with **…** for the pages in between. **‹** and **›** move one page; **«** and **»** jump to the first and last page.
+- **Rows** chooses how many lines a page shows: 10, 20, 50 or 100. Each list remembers your choice on that browser.
+- Changing a filter or a search goes back to the first page.
+
+On a phone the bar shrinks to **‹ Page 6 of 49 ›**. To find one person or payment, use the list's search and filters rather than paging.
+
 ## On a phone
 
 On a small screen, a bar at the bottom of the screen has four buttons: **Today** (your Dashboard), **Calendar**, **Giving**, and **More**. The top bar has no menu button of its own; **More** is the one phone menu. It holds your Profile, Family, Ministries, Gallery, leadership and bylaws, **Make a Pledge** (while a drive is running), the language choice, **Help** (this guide) and **Sign Out**.

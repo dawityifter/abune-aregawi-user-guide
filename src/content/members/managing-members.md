@@ -25,7 +25,7 @@ Below them you can:
 
 - **Search** by name, email or phone.
 - Filter by **Role**, by **Status** (Active / Inactive), by **Address** (Missing address / Has address), and by **Household** (Heads of household / Household members). Use **Missing address** to find records that need completing before statements go out.
-- Use **Previous** / **Next** to page through results.
+- Page through results with the bar under the list, and choose 10, 20, 50 or 100 **Rows** per page. See [Long lists](#/getting-started/finding-your-way?h=long-lists).
 
 ### Head of household or household member
 
