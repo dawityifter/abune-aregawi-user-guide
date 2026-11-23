@@ -20,7 +20,7 @@ New members automatically get the **Member** role when they register. Only an **
 | **Bookkeeper** | Day-to-day finance: record payments and expenses, reconcile the bank, work Zelle and Square, run reports; reads members and loans. No budget approval, Benevity import or new pledges for members | Assistant treasurer |
 | **AR Team (Income)** | Income side: record and edit payments, pledges and dues; reads member records and every financial transaction | Finance volunteer for income |
 | **AP Team (Expenses)** | Expense side: record and edit expenses; reads member records and every financial transaction | Finance volunteer for bills |
-| **Budget Committee** | Read financial records and reports; budget approval | Budget committee members |
+| **Budget Committee** | Read-only finance for planning: payments, expenses, bank, pledges, loans, employees, vendors and reports. No member list or Zelle/Square matching. Budget approval is planned, not yet built | Budget committee members |
 | **Auditor/Reviewer** | **View-only** access to the books, member records and activity logs | Internal auditor |
 | **Church Leadership** | **View-only** oversight of members, finances, departments, merchandise and activity logs; sends SMS to the congregation and publishes announcements and events | Board members, priest |
 | **Secretary** | Member records and households, member reports, SMS, voicemail and volunteers, departments, announcements and events, activity logs; sees a member's giving, not the church's books | Church secretary |
@@ -108,6 +108,15 @@ The Bookkeeper does the day-to-day entry and the bank:
 - **Opening a new pledge for a member** stays with the Treasurer and Administrator. When a payment has no pledge to credit, the Zelle, Square and bank forms say so; record the payment, and the Treasurer adds the pledge.
 - Benevity import, recording loans, ledger backups, budget approval and member edits are not part of the role.
 
+## The Budget Committee
+
+The Budget Committee plans from the church's numbers and changes none of them:
+
+- **Treasurer Dashboard:** reads payments, pledges, member dues, expenses, the bank and the reports, including the **Board Summary**, plus **Loans**, **Employees** and **Vendors**.
+- **Zelle** and **Square** are not shown: they are day-to-day payment matching.
+- **Admin Panel** opens on **Fundraising** (pledge-drive totals, no donor names). The member list is not part of the role.
+- **Budget approval** is planned but not yet in the application. There is no budget screen today.
+
 ## What each role can do — at a glance
 
 ✔ = allowed, ◐ = view only, blank = not allowed. The server enforces these limits.
@@ -121,7 +130,7 @@ The Bookkeeper does the day-to-day entry and the bank:
 | Record and edit payments | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | View payments, expenses and reports | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ one member's giving | |
 | Bank reconciliation | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | | |
-| Zelle, Square, Benevity, Loans | ✔ | ✔ | ✔ Zelle, Square; ◐ Loans | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
+| Zelle, Square, Benevity, Loans | ✔ | ✔ | ✔ Zelle, Square; ◐ Loans | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | ◐ Loans | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
 | Record and edit expenses | ✔ | ✔ | ✔ | | ✔ | | | | | |
 | Create and edit pledge drives | ✔ | | | | | | | | | |
 | Record pledges | ✔ | ✔ | ✔ | ✔ | | | | | | |

@@ -3,7 +3,7 @@ title: Employees and vendors
 order: 3
 audience: Treasurer, AP Team, Admin
 summary: Keeping the lists of staff and suppliers that expenses are paid to.
-updated: 2026-11-21
+updated: 2026-11-23
 related: expenses/recording-expenses
 ---
 
@@ -12,7 +12,7 @@ The **Employees** and **Vendors** tabs on the Treasurer Dashboard keep the lists
 :::admin Who can do what here
 - **Add, edit and delete** employees and vendors: Admin.
 - **Pick** them as payees in Add Expense: Admin, Treasurer, Bookkeeper, AP Team.
-- **View** the lists: also Church Leadership, Auditor and AR Team.
+- **View** the lists: also Church Leadership, Auditor, Budget Committee and AR Team.
 :::
 
 ## Employees (“Employee Management”)

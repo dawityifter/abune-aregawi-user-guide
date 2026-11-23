@@ -12,7 +12,7 @@ Sometimes a member **lends** money to the church, for example toward a building 
 > “These are liability records — loans from members. They are NOT donations and NOT tax-deductible.”
 
 :::admin
-Only **Treasurer** and **Admin** can record loans and repayments. The other finance roles and Church Leadership can read them.
+Only **Treasurer** and **Admin** can record loans and repayments. The other finance roles, including the Budget Committee, and Church Leadership can read them.
 :::
 
 ## Recording a loan

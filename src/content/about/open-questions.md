@@ -55,3 +55,4 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 | 24 | Several Tigrigna strings written during development await native-speaker review (`tigrigna-translation-review.md` in the app repository) |
 | 25 | HTTPS certificate renewal method on the server, and the server’s OS and Node versions, are undocumented |
 | 26 | Department **Request to Join** sends a volunteer request to staff but does not add the person to the department |
+| 27 | The **Budget Committee** role describes budget approval, but the application has no budget screen yet; a budget feature is being planned |
