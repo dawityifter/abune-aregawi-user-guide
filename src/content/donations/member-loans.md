@@ -3,7 +3,7 @@ title: Member loans (not donations)
 order: 8
 audience: Treasurer, Admin
 summary: Recording money a member lends the church, recording repayments, and why loans never count as income or appear on statements.
-updated: 2026-11-11
+updated: 2026-11-23
 related: dashboard/financial-overview, donations/how-money-arrives
 ---
 
@@ -12,7 +12,7 @@ Sometimes a member **lends** money to the church, for example toward a building 
 > “These are liability records — loans from members. They are NOT donations and NOT tax-deductible.”
 
 :::admin
-Only **Treasurer** and **Admin** can record loans and repayments.
+Only **Treasurer** and **Admin** can record loans and repayments. The other finance roles and Church Leadership can read them.
 :::
 
 ## Recording a loan

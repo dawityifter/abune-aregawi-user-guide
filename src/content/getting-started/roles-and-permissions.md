@@ -17,7 +17,7 @@ New members automatically get the **Member** role when they register. Only an **
 |---|---|---|
 | **Admin/Super Admin** | Full access to everything, including roles and deletion | One or two trusted administrators |
 | **Treasurer** | The main finance role: payments, expenses, pledges, bank reconciliation, Zelle, Square, Benevity, loans, reports | The treasurer |
-| **Bookkeeper** | Day-to-day finance: record payments and expenses, reconcile the bank, run reports. No budget approval, no Zelle/Square/Benevity/Loans screens | Assistant treasurer |
+| **Bookkeeper** | Day-to-day finance: record payments and expenses, reconcile the bank, work Zelle and Square, run reports; reads members and loans. No budget approval, Benevity import or new pledges for members | Assistant treasurer |
 | **AR Team (Income)** | Income side: record and edit payments, pledges and dues; reads member records and every financial transaction | Finance volunteer for income |
 | **AP Team (Expenses)** | Expense side: record and edit expenses; reads member records and every financial transaction | Finance volunteer for bills |
 | **Budget Committee** | Read financial records and reports; budget approval | Budget committee members |
@@ -97,20 +97,31 @@ The Secretary keeps the parish's member records and handles its communication:
 - **Giving:** sees one member's payment history and dues from **Manage Members**, to answer "has this family paid?". The Secretary has **no Treasurer Dashboard**: the church's payments, expenses, bank lines, pledges and pledge drives are for the finance roles.
 - Cannot deactivate members or change anyone's role; those stay with the Administrator.
 
+## The Bookkeeper
+
+The Bookkeeper does the day-to-day entry and the bank:
+
+- **Payments** and **expenses:** **Add Payment**, **Add Expense** and **Edit**, with member search and the payee lists.
+- **Bank:** uploads the statement, reconciles, auto-reconciles and undoes, works the expense-rule backlog, and sees the Sunday deposit check.
+- **Zelle** and **Square:** syncs, matches and records payments, and ignores or restores them, like the Treasurer.
+- **Reads** the member list (Admin Panel → **Manage Members**, read-only) and **Loans**.
+- **Opening a new pledge for a member** stays with the Treasurer and Administrator. When a payment has no pledge to credit, the Zelle, Square and bank forms say so; record the payment, and the Treasurer adds the pledge.
+- Benevity import, recording loans, ledger backups, budget approval and member edits are not part of the role.
+
 ## What each role can do — at a glance
 
 ✔ = allowed, ◐ = view only, blank = not allowed. The server enforces these limits.
 
 | Task | Admin | Treasurer | Bookkeeper | AR | AP | Budget | Auditor | Leadership | Secretary | Relationship |
 |---|---|---|---|---|---|---|---|---|---|---|
-| View the member list | ✔ | ◐ | | ◐ | ◐ | | ◐ | ◐ | ✔ | ✔ |
+| View the member list | ✔ | ◐ | ◐ | ◐ | ◐ | | ◐ | ◐ | ✔ | ✔ |
 | Add and edit members | ✔ | | | | | | | | ✔ | ✔ |
 | Delete members, change roles | ✔ | | | | | | | | | |
 | Member reports (household directory, member information) | ✔ | | | | | | | | ✔ | |
 | Record and edit payments | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | View payments, expenses and reports | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ one member's giving | |
 | Bank reconciliation | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | | |
-| Zelle, Square, Benevity, Loans | ✔ | ✔ | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
+| Zelle, Square, Benevity, Loans | ✔ | ✔ | ✔ Zelle, Square; ◐ Loans | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
 | Record and edit expenses | ✔ | ✔ | ✔ | | ✔ | | | | | |
 | Create and edit pledge drives | ✔ | | | | | | | | | |
 | Record pledges | ✔ | ✔ | ✔ | ✔ | | | | | | |
@@ -125,7 +136,6 @@ It reflects the checks in the application’s code as of the date at the top of 
 :::
 
 :::warning Known gaps between what you see and what is allowed
-- **Bookkeeper** is described as able to view all members, but the member list does not load for that role.
 
 These are recorded in [open questions](#/about/open-questions) for the developer.
 :::

@@ -3,7 +3,7 @@ title: Ownership and responsibility matrix
 order: 6
 audience: Church leadership
 summary: A proposed model of who is responsible for each part of running the application, for leadership to assign to named people.
-updated: 2026-11-21
+updated: 2026-11-23
 related: continuity/taking-over, continuity/integrations, getting-started/roles-and-permissions
 ---
 

@@ -1,16 +1,16 @@
 ---
 title: Zelle payments
 order: 5
-audience: Treasurer, Admin
+audience: Treasurer, Bookkeeper, Admin
 summary: How Zelle emails enter Zelle Review, matching each to a member, creating the payment, payments sent on someone else’s behalf, and how the bank statement confirms them without duplicates.
-updated: 2026-11-21
+updated: 2026-11-23
 related: reconciliation/reviewing-bank-transactions, reconciliation/finding-duplicates, help/incident-history, pledges/payments-and-pledges
 ---
 
 Members send Zelle gifts to the church’s Zelle email address, which is shown on the Give page. Each time, Chase sends a **notification email** (“… sent you money”) to that mailbox, and later the payment appears on the **bank statement**. The application uses both: the **email** to record the gift quickly, and the **bank line** to confirm it.
 
 :::admin
-**Zelle Review** is for **Treasurer** and **Admin**. **Church Leadership** can see the list but cannot sync, match, create or ignore anything.
+**Zelle Review** is for **Treasurer**, **Bookkeeper** and **Admin**. Only the Treasurer and Admin can open a *new* pledge while recording. **Church Leadership**, **Auditor**, **AR Team** and **AP Team** can see the list but cannot sync, match, create or ignore anything.
 :::
 
 ## How Zelle emails arrive
@@ -60,7 +60,7 @@ If you prefer, match the member (step 6) and leave the rest for bank reconciliat
 
 ### Pledge Drive payments
 
-If the type is **Pledge Drive**, the screen shows the member’s open pledge and credits it, or offers **Also record this as a pledge**. See [How payments credit pledges](#/pledges/payments-and-pledges).
+If the type is **Pledge Drive**, the screen shows the member’s open pledge and credits it, or, for the Treasurer and Admin, offers **Also record this as a pledge**. Others see a note that the Treasurer opens new pledges. See [How payments credit pledges](#/pledges/payments-and-pledges).
 
 ## “This payment may already be recorded”
 

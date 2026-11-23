@@ -1,9 +1,9 @@
 ---
 title: Square card-reader payments
 order: 6
-audience: Treasurer, Admin
+audience: Treasurer, Bookkeeper, Admin
 summary: How payments taken on the church’s Square reader appear in Square Review, how to credit them to a member or a non-member donor, and what Square does not tell the application.
-updated: 2026-11-21
+updated: 2026-11-23
 status: needs-confirmation
 related: donations/how-money-arrives, reconciliation/reviewing-bank-transactions, continuity/integrations
 ---
@@ -11,7 +11,7 @@ related: donations/how-money-arrives, reconciliation/reviewing-bank-transactions
 The church takes card payments in person with a **Square** reader paired to a phone, for example for gifts at the door and religious item sales. Square knows the card and amount, but usually **not who the person is**. Square Review is where the treasurer supplies that.
 
 :::admin
-**Square Review** is for **Treasurer** and **Admin**. **Church Leadership** can see the list but cannot sync, credit, ignore or restore anything.
+**Square Review** is for **Treasurer**, **Bookkeeper** and **Admin**. Only the Treasurer and Admin can open a *new* pledge while crediting. **Church Leadership**, **Auditor**, **AR Team** and **AP Team** can see the list but cannot sync, credit, ignore or restore anything.
 :::
 
 ## How Square payments arrive

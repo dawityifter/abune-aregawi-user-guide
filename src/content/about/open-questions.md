@@ -46,7 +46,7 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 
 | # | Gap |
 |---|---|
-| 18 | Frontend permissions broader than the server: Bookkeeper is described as viewing all members, but the member list refuses it |
+| 18 | Resolved 2026-11-23: every role the screens describe as reading members can now load the member list |
 | 19 | Resolved 2026-11-23: the Secretary now has an Admin Panel link on the Dashboard |
 | 20 | Zelle Review: no **Ignore** button (the server supports it); much of the screen is untranslated |
 | 21 | Sunday Deposit Check: no way to explain or clear a flag |

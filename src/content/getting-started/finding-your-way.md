@@ -116,7 +116,7 @@ The tabs are in two rows, labelled **Core Workflow** and **Admin & Maintenance**
 | View payments, pledges, expenses, reports | Admin, Treasurer, Bookkeeper, AR Team, AP Team, Auditor, Budget Committee, Church Leadership |
 | Add or edit payments and pledges | Admin, Treasurer, Bookkeeper, AR Team |
 | Bank reconciliation (approve, link, record expenses) | Admin, Treasurer, Bookkeeper |
-| Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer (Church Leadership, Auditor, AR Team and AP Team see Zelle, Square and Loans read-only) |
+| Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer; Bookkeeper works Zelle and Square and reads Loans (Church Leadership, Auditor, AR Team and AP Team see Zelle, Square and Loans read-only) |
 | Add or edit expenses | Admin, Treasurer, Bookkeeper, AP Team |
 | Delete a payment or an expense | Admin only, and not from these screens. See [Correcting a payment](#/donations/correcting-a-payment) |
 
