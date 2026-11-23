@@ -3,7 +3,7 @@ title: Recording expenses and checks
 order: 1
 audience: Treasurer, Bookkeeper, AP Team
 summary: Add Expense for checks and cash paid out, check numbers, voided checks, the skipped-check report, and correcting an expense.
-updated: 2026-11-11
+updated: 2026-11-23
 related: expenses/expenses-from-the-bank, expenses/employees-and-vendors, reports/expense-report
 ---
 
@@ -13,7 +13,7 @@ Every amount the church pays out must be recorded as an **expense** with a **cat
 - **ACH bills, card purchases and other bank debits**: record from the bank line. See [Expenses from the bank](#/expenses/expenses-from-the-bank).
 
 :::admin
-Recording and editing expenses: **Admin, Treasurer, Bookkeeper, AP Team**. Viewing: also Church Leadership, Secretary, Auditor, Budget Committee.
+Recording and editing expenses: **Admin, Treasurer, Bookkeeper, AP Team**. Viewing: also Church Leadership, Auditor, Budget Committee, AR Team.
 :::
 
 ## Adding an expense

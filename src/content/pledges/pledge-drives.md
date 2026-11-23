@@ -3,7 +3,7 @@ title: Pledge drives (fundraising campaigns)
 order: 1
 audience: Admin (create and change); finance and leadership (view)
 summary: Creating, activating, closing and reactivating a pledge drive, and what members see.
-updated: 2026-11-11
+updated: 2026-11-23
 related: pledges/managing-pledges, pledges/pledge-dashboard, pledges/payments-and-pledges
 ---
 
@@ -14,7 +14,7 @@ A **pledge drive** (the application also calls it a **campaign**) is a fundraisi
 **Admin Panel → Fundraising** shows **Fundraising Campaigns**.
 
 :::admin Permission
-Everyone in finance, leadership and the secretary can **see** drives and their totals. Only **Admin** can create, edit, activate or close one.
+Everyone in finance and leadership can **see** drives and their totals. Only **Admin** can create, edit, activate or close one.
 :::
 
 ## A drive’s life

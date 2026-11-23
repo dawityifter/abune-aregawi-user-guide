@@ -3,7 +3,7 @@ title: Voicemail inbox and volunteer requests
 order: 5
 audience: Admin, Church Leadership, Secretary
 summary: Listening to voicemails left on the church phone line, and following up members who want to serve.
-updated: 2026-11-11
+updated: 2026-11-23
 related: continuity/integrations
 ---
 
@@ -21,6 +21,10 @@ Calls to the church’s **Twilio** phone number can leave a voicemail. Each one 
 - Use **Refresh** to check for new ones.
 
 ## Volunteer Requests
+
+:::admin
+**Admin** and **Secretary** read and answer requests; **Church Leadership** reads them only. (Before 2026-11-23 a fault let only Admin load this list.)
+:::
 
 “Members interested in serving” lists people who said they would like to volunteer, with any message and whether they asked for a call (**Call Requested**). After contacting someone, mark the request **Responded**. It is then hidden from the list.
 

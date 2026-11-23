@@ -3,11 +3,11 @@ title: Member reports and directory
 order: 7
 audience: Admin, Secretary, Church Leadership
 summary: Membership summary, household directory and member information report.
-updated: 2026-11-11
+updated: 2026-11-23
 related: members/managing-members, getting-started/security-basics
 ---
 
-**Admin Panel → Reports** (Admin only).
+**Admin Panel → Reports** (Admin and Secretary).
 
 | Report | Contents |
 |---|---|

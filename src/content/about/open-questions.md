@@ -3,7 +3,7 @@ title: Open questions and known gaps
 order: 1
 audience: Church leadership, technical administrator, treasurer
 summary: Everything this guide could not confirm, the application’s known gaps, and decisions waiting for the church — in priority order.
-updated: 2026-11-21
+updated: 2026-11-23
 status: needs-confirmation
 related: continuity/taking-over, continuity/developer-onboarding, about/completeness-checklist
 ---
@@ -47,7 +47,7 @@ Where this guide says **Needs confirmation**, the item is listed here. Each one 
 | # | Gap |
 |---|---|
 | 18 | Frontend permissions broader than the server: Bookkeeper is described as viewing all members, but the member list refuses it |
-| 19 | Secretary can use `/admin` but has no Dashboard link to it |
+| 19 | Resolved 2026-11-23: the Secretary now has an Admin Panel link on the Dashboard |
 | 20 | Zelle Review: no **Ignore** button (the server supports it); much of the screen is untranslated |
 | 21 | Sunday Deposit Check: no way to explain or clear a flag |
 | 22 | No screen to email a statement (the server can) |

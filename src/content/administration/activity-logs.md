@@ -3,11 +3,11 @@ title: Activity logs and website analytics
 order: 6
 audience: Admin, Church Leadership, Auditor
 summary: Seeing who changed what and when, and opening the church’s own website analytics.
-updated: 2026-11-21
+updated: 2026-11-23
 related: administration/roles-and-permissions, technical/logs-and-monitoring
 ---
 
-**Admin Panel → Activity Logs** (Admin, Church Leadership and Auditor; read-only for the last two).
+**Admin Panel → Activity Logs** (Admin, Church Leadership, Auditor and Secretary; read-only for all but Admin).
 
 ## Activity Logs
 

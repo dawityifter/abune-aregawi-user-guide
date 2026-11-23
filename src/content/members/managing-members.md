@@ -3,11 +3,11 @@ title: Finding, adding and editing members
 order: 1
 audience: Secretary, Relationship Department, Admin
 summary: Using Manage Members to search, add a member, edit their details, and deactivate a record.
-updated: 2026-11-21
+updated: 2026-11-23
 related: members/households-and-dependents, members/duplicate-and-incorrect-records, administration/roles-and-permissions
 ---
 
-The member list lives in **Admin Panel → Manage Members**. Secretaries reach it at the `/admin` address, because their Dashboard has no link (see [Finding your way](#/getting-started/finding-your-way)).
+The member list lives in **Admin Panel → Manage Members**.
 
 :::admin Who can do what here
 - **View the list:** Admin, Treasurer, Church Leadership, Secretary, Relationship

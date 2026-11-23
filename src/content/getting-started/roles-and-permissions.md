@@ -3,7 +3,7 @@ title: Roles — who can do what
 order: 4
 audience: Everyone
 summary: The twelve roles in the application, what each one is for, and how they combine.
-updated: 2026-11-21
+updated: 2026-11-23
 related: administration/roles-and-permissions, getting-started/finding-your-way, continuity/ownership-matrix
 ---
 
@@ -23,7 +23,7 @@ New members automatically get the **Member** role when they register. Only an **
 | **Budget Committee** | Read financial records and reports; budget approval | Budget committee members |
 | **Auditor/Reviewer** | **View-only** access to the books, member records and activity logs | Internal auditor |
 | **Church Leadership** | **View-only** oversight of members, finances, departments, merchandise and activity logs; sends SMS to the congregation and publishes announcements and events | Board members, priest |
-| **Secretary** | Member registration and edits, SMS, documentation | Church secretary |
+| **Secretary** | Member records and households, member reports, SMS, voicemail and volunteers, departments, announcements and events, activity logs; sees a member's giving, not the church's books | Church secretary |
 | **🤝 Relationship Department** | Welcoming new members; adding and editing member records; announcements and events | Relationship department |
 | **Member** | Own profile, household, dues and giving; give online | Every registered member |
 | **Guest** | Public pages only | Not signed in |
@@ -87,6 +87,16 @@ The two finance-team roles split the work by direction of money, and both can se
 - **AP Team** records and edits **expenses** with **Add Expense** and **Edit**, picking the payee from the employee and vendor lists. Adding or changing an employee or vendor stays with the Administrator.
 - Neither reconciles the bank, sends SMS or changes member records.
 
+## The Secretary
+
+The Secretary keeps the parish's member records and handles its communication:
+
+- **Admin Panel** (now linked from the Dashboard): **Manage Members** with **Add** and **Edit**, households and dependents, promoting a dependent; **Reports** (household directory and member information); **Departments**; **Activity Logs** (read-only); **Messages** (voicemail and volunteer requests); **Merchandise**; **Survey Report**.
+- **Communications:** SMS to members, groups and departments.
+- **Relationship Department** page: publishes **announcements** and **events** (the new-member welcome lists stay with Relationship).
+- **Giving:** sees one member's payment history and dues from **Manage Members**, to answer "has this family paid?". The Secretary has **no Treasurer Dashboard**: the church's payments, expenses, bank lines, pledges and pledge drives are for the finance roles.
+- Cannot deactivate members or change anyone's role; those stay with the Administrator.
+
 ## What each role can do — at a glance
 
 ✔ = allowed, ◐ = view only, blank = not allowed. The server enforces these limits.
@@ -96,17 +106,18 @@ The two finance-team roles split the work by direction of money, and both can se
 | View the member list | ✔ | ◐ | | ◐ | ◐ | | ◐ | ◐ | ✔ | ✔ |
 | Add and edit members | ✔ | | | | | | | | ✔ | ✔ |
 | Delete members, change roles | ✔ | | | | | | | | | |
+| Member reports (household directory, member information) | ✔ | | | | | | | | ✔ | |
 | Record and edit payments | ✔ | ✔ | ✔ | ✔ | | | | | | |
-| View payments, expenses and reports | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ | |
-| Bank reconciliation | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ | |
+| View payments, expenses and reports | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | ◐ one member's giving | |
+| Bank reconciliation | ✔ | ✔ | ✔ | ◐ | ◐ | ◐ | ◐ | ◐ | | |
 | Zelle, Square, Benevity, Loans | ✔ | ✔ | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | ◐ Zelle, Square, Loans | ◐ Zelle, Square, Loans | | |
 | Record and edit expenses | ✔ | ✔ | ✔ | | ✔ | | | | | |
 | Create and edit pledge drives | ✔ | | | | | | | | | |
 | Record pledges | ✔ | ✔ | ✔ | ✔ | | | | | | |
 | Send SMS | ✔ | | | | | | | ✔ | ✔ | |
 | Welcome new members | ✔ | | | | | | | ◐ | | ✔ |
-| Announcements and events | ✔ | | | | | | | ✔ | | ✔ |
-| Activity logs | ✔ | | | | | | ◐ | ◐ | | |
+| Announcements and events | ✔ | | | | | | | ✔ | ✔ | ✔ |
+| Activity logs | ✔ | | | | | | ◐ | ◐ | ◐ | |
 | Delete payments or expenses | ✔ (by a technical administrator) | | | | | | | | | |
 
 :::note Where this table comes from
@@ -114,7 +125,6 @@ It reflects the checks in the application’s code as of the date at the top of 
 :::
 
 :::warning Known gaps between what you see and what is allowed
-- **Secretary** can open the Admin Dashboard at `/admin`, but the Dashboard shows no link to it.
 - **Bookkeeper** is described as able to view all members, but the member list does not load for that role.
 
 These are recorded in [open questions](#/about/open-questions) for the developer.

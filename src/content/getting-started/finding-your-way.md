@@ -3,7 +3,7 @@ title: Finding your way around
 order: 3
 audience: Everyone
 summary: The Dashboard, the top menu, the phone menu at the bottom, the Treasurer and Admin dashboards, and switching language.
-updated: 2026-11-21
+updated: 2026-11-23
 related: getting-started/roles-and-permissions, dashboard/financial-overview, administration/roles-and-permissions
 ---
 
@@ -56,13 +56,10 @@ Below that, on a computer, are two lists of links. On a phone there are four qui
 | Link | Who sees it | Opens |
 |---|---|---|
 | **Communications** | Admin, Church Leadership, Secretary | SMS sending page (`/sms`) |
-| **Relationship Department** | Admin, Relationship, Church Leadership | Outreach dashboard (`/outreach`) |
-| **Treasurer** | Every finance role, plus Church Leadership and Secretary (view) | Treasurer Dashboard (`/treasurer`) |
-| **Admin Panel** | Admin, Church Leadership, Treasurer, Bookkeeper, Budget Committee, Auditor, AR Team, AP Team, Relationship | Admin Dashboard (`/admin`) |
+| **Relationship Department** | Admin, Relationship, Church Leadership, Secretary (announcements and events only) | Outreach dashboard (`/outreach`) |
+| **Treasurer** | Every finance role, plus Church Leadership (view) | Treasurer Dashboard (`/treasurer`) |
+| **Admin Panel** | Admin, Church Leadership, Treasurer, Bookkeeper, Budget Committee, Auditor, AR Team, AP Team, Secretary, Relationship | Admin Dashboard (`/admin`) |
 
-:::warning Secretaries: the Admin Panel has no link for you
-A **Secretary** may use the Admin Dashboard, but the Dashboard does not show the **Admin Panel** link for that role. Go to it by typing the address: add `/admin` to the end of the site address, for example `https://abunearegawi.church/admin`, and bookmark it. This is a known gap in the application.
-:::
 
 :::screenshot images/getting-started/dashboard.png | The Dashboard’s link lists. Staff also see “Church administration”
 1 @ 22,14 Your church: links every member has
@@ -116,7 +113,7 @@ The tabs are in two rows, labelled **Core Workflow** and **Admin & Maintenance**
 
 | Work | Allowed roles |
 |---|---|
-| View payments, pledges, expenses, reports | Admin, Treasurer, Bookkeeper, AR Team, AP Team, Auditor, Budget Committee, Church Leadership, Secretary |
+| View payments, pledges, expenses, reports | Admin, Treasurer, Bookkeeper, AR Team, AP Team, Auditor, Budget Committee, Church Leadership |
 | Add or edit payments and pledges | Admin, Treasurer, Bookkeeper, AR Team |
 | Bank reconciliation (approve, link, record expenses) | Admin, Treasurer, Bookkeeper |
 | Zelle Review, Square Review, Benevity import, Loans | Admin, Treasurer (Church Leadership, Auditor, AR Team and AP Team see Zelle, Square and Loans read-only) |
@@ -130,12 +127,12 @@ If you open a tab your role does not allow, it shows an error or “Access denie
 | Tab | What it is for | Who sees it | Guide page |
 |---|---|---|---|
 | **Manage Members** | Member list, add and edit members and dependents | Everyone who can open the panel | [Managing members](#/members/managing-members) |
-| **Reports** | Membership summary, household directory, member information report | Admin only | [Member reports](#/reports/member-reports) |
-| **Fundraising** | Pledge drives (campaigns). Only Admin can create or change them | Admin, finance roles, Leadership, Secretary | [Pledge drives](#/pledges/pledge-drives) |
+| **Reports** | Membership summary, household directory, member information report | Admin, Secretary | [Member reports](#/reports/member-reports) |
+| **Fundraising** | Pledge drives (campaigns). Only Admin can create or change them | Admin, finance roles, Leadership | [Pledge drives](#/pledges/pledge-drives) |
 | **Merchandise** | Event merchandise (t-shirt) orders and inventory | Admin, Treasurer, Bookkeeper, Leadership, Secretary | [Merchandise](#/administration/merchandise) |
 | **Role Management** | Give people roles such as Treasurer or Secretary | Admin only | [Roles and permissions](#/administration/roles-and-permissions) |
 | **Departments** | Departments, ministries, their members, meetings and tasks | Admin, Church Leadership, Secretary, Treasurer | [Departments](#/administration/departments) |
-| **Activity Logs** | Who changed what, and when | Admin, Church Leadership, Auditor | [Activity logs](#/administration/activity-logs) |
+| **Activity Logs** | Who changed what, and when | Admin, Church Leadership, Auditor, Secretary | [Activity logs](#/administration/activity-logs) |
 | **Messages** | Voicemail inbox and volunteer requests | Admin, Church Leadership, Secretary | [Voicemail and volunteers](#/administration/voicemail-and-volunteers) |
 | **Survey Report** | Results of the church services survey | Admin, Secretary, Church Leadership | [Survey report](#/reports/survey-report) |
 
