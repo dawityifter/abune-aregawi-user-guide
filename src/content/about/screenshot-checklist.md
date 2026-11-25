@@ -3,7 +3,7 @@ title: Screenshot checklist
 order: 3
 audience: Technical administrator, guide maintainers
 summary: Which application screenshots are in the guide, how each was captured, and how to capture them safely with invented data.
-updated: 2026-11-21
+updated: 2026-11-24
 related: about/maintaining-this-guide, about/completeness-checklist
 ---
 
@@ -32,7 +32,9 @@ The demo environment files (seed script, synthetic CSVs, settings) are not in th
 | `reconciliation/bank-transactions.png` | The Bank Transactions list ends with the shared page bar, with **Rows** and a “Showing … of …” count, instead of Previous / Next (2026-11-21). |
 | `administration/role-management.png` | Role Management ends with the shared page bar (2026-11-21). |
 
-The Treasurer, Admin, SMS and Outreach screens cannot be captured with the demo sign-in: several panels read the Firebase sign-in directly, which demo mode does not provide, so they show “User not authenticated” or “Access Denied”. Retaking them needs the Firebase sign-in emulator, which the application is not set up for yet.
+Some Treasurer, Admin and SMS panels still cannot be captured with the demo sign-in: they read the Firebase sign-in directly and show “User not authenticated” or “Access Denied”.
+
+The **Outreach** screens can (2026-11-24). Start the demo backend with a placeholder Firebase emulator address (`FIREBASE_AUTH_EMULATOR_HOST`, nothing listens there; the demo sign-in never reaches it) so its sign-in check accepts the demo pass. Set `DEMO_PHONE` to an invented member who holds the **Relationship** role, and pass that member's profile as `PROFILE_JSON` with `PERSONA=relationship`.
 
 ## Screenshots with a Tigrigna twin
 
@@ -46,6 +48,7 @@ Each pair is the same screen, in English and in Tigrigna. The guide shows an **E
 | `member/profile.png`, `member/profile-complete.png`, `member/dues.png`, `member/pay-dues.png`, `member/giving.png`, `member/pledge.png`, `member/my-service.png`, `member/calendar.png` | [What members can do themselves](#/members/member-self-service) |
 | `member/give.png`, `mobile/give.png` | [Online giving with Stripe](#/donations/online-giving-stripe) |
 | `member/family.png` | [Households and dependents](#/members/households-and-dependents) |
+| `outreach/pending.png`, `outreach/welcome-note.png`, `outreach/welcomed.png`, `outreach/announcements.png`, `outreach/announcement-form.png`, `outreach/events.png`, `outreach/event-form.png`, `outreach/tv.png` | [Outreach, welcomes and announcements](#/administration/outreach-and-announcements) |
 
 The Apple Pay and Google Pay button does not appear in these pictures: it only shows on a device that has a wallet, once the church’s domain is registered with Stripe.
 
@@ -97,6 +100,6 @@ To retake them, prefer a local environment with only invented data. If you must 
 | Payment Details → **Edit** form | Corrections |
 | Edit Member window (four tabs) | Member edits |
 | Loans tab, Expense Report, Board Summary | Reports |
-| Outreach dashboard, Voicemail inbox (need the Firebase sign-in emulator, see above) | Administration |
+| Voicemail inbox (needs the Firebase sign-in emulator, see above) | Administration |
 
 When you add an image: save it under `public/images/<section>/`, add a `:::screenshot` block to the page (see [Maintaining this guide](#/about/maintaining-this-guide)), run `npm run check:content`, and look at the page to place the numbered markers.

@@ -65,6 +65,14 @@ const PINS = {
   'member/giving': ['text=My dues', 'text=Statements', 'text=Make a Pledge'],
   'member/family': ['button:has-text("Add Dependent")', 'text=Edit >> nth=0'],
   'member/calendar': ['text=Upcoming at the parish', 'text=Add to my calendar >> nth=0'],
+  'outreach/pending': ['button:has-text("Mark Welcomed") >> nth=0', 'button:has-text("Already Welcomed")', 'button:has-text("Public Announcements")', 'button:has-text("Events") >> nth=0', 'button[role="switch"]'],
+  'outreach/welcome-note': ['textarea', 'button:has-text("Save")'],
+  'outreach/welcomed': ['th:has-text("Welcomed By")', 'th:has-text("Welcome Note")'],
+  'outreach/announcements': ['button:has-text("Add Announcement")', 'button:has-text("Expired")', 'button:has-text("Cancel Announcement") >> nth=0'],
+  'outreach/announcement-form': ['text=Add Tigrinya Translation', 'button:has-text("Save")'],
+  'outreach/events': ['button:has-text("Add event")', 'button:has-text("Upcoming")', 'button:has-text("Cancel event") >> nth=0'],
+  'outreach/event-form': ['text=Leave the times empty', 'text=Title in Tigrigna'],
+  'outreach/tv': ['button[role="switch"]', '.fa-cog, .fa-gear'],
   'mobile/more': ['text=English', 'text=My Profile', 'text=Make a Pledge'],
   'mobile/giving': ['text=Give >> nth=0', 'text=My dues'],
 };
@@ -219,6 +227,40 @@ const SCENES = {
   'member/calendar': { persona: 'member', run: async (p, l) => { await go(p, '/calendar', 3000); await save(p, 'member/calendar', l); } },
   'member/my-service': { persona: 'member', run: async (p, l) => { await go(p, '/departments', 3000); await save(p, 'member/my-service', l); } },
   'member/home': { persona: 'member', run: async (p, l) => { await go(p, '/', 3000); await save(p, 'member/home', l); } },
+
+  // ---------- Relationship Department (Outreach & Member Relations) ----------
+  // Start the demo backend with DEMO_PHONE of an invented member holding the Relationship
+  // role, and PROFILE_JSON with that member's profile. Tabs are found by English label,
+  // then the page switches language before the picture.
+  'outreach/pending': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await toLang(); await save(p, 'outreach/pending', l); } },
+  'outreach/welcome-note': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000);
+    // Switch language first: the open window covers the language button.
+    await toLang(); await p.locator('tbody button').first().click(); await p.waitForTimeout(1200);
+    await p.locator('textarea').first().fill('Called after Sunday liturgy. Family of four, interested in Sunday school.');
+    await save(p, 'outreach/welcome-note', l, { keep: true }); } },
+  'outreach/welcomed': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await click(p, 'Already Welcomed'); await settle(p, 1800);
+    await toLang(); await save(p, 'outreach/welcomed', l); } },
+  'outreach/announcements': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await click(p, 'Public Announcements'); await settle(p, 1800);
+    await toLang(); await save(p, 'outreach/announcements', l); } },
+  'outreach/announcement-form': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await click(p, 'Public Announcements'); await settle(p, 1500);
+    await toLang(); await p.locator('button:has(i.fa-plus)').first().click(); await p.waitForTimeout(1000);
+    await save(p, 'outreach/announcement-form', l, { keep: true }); } },
+  'outreach/events': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await click(p, 'Events'); await settle(p, 1800);
+    await toLang(); await save(p, 'outreach/events', l); } },
+  'outreach/event-form': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await click(p, 'Events'); await settle(p, 1500);
+    await toLang(); await p.locator('button:has(i.fa-plus)').first().click(); await p.waitForTimeout(1000);
+    await save(p, 'outreach/event-form', l, { keep: true }); } },
+  'outreach/tv': { persona: 'relationship', navEn: true, run: async (p, l, toLang) => {
+    await go(p, '/outreach', 3000); await toLang();
+    await p.locator('button[role="switch"]').first().click(); await p.waitForTimeout(2500);
+    await save(p, 'outreach/tv', l, { keep: true }); } },
 };
 
 const want = process.argv.slice(2);
